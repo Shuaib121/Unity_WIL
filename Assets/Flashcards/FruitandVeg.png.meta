@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: e7f952fd354d9934ca2ea26c8353495a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6517119297322988090
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_0
+  - first:
+      213: 5684449184258336621
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_1
+  - first:
+      213: -4765504702267813396
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_2
+  - first:
+      213: 3214940996555608226
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_3
+  - first:
+      213: 5234518390549598098
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_4
+  - first:
+      213: 2990582213513320770
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_5
+  - first:
+      213: 3578836358828817526
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_6
+  - first:
+      213: -7950143247213540846
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_7
+  - first:
+      213: 6983591866047114753
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_8
+  - first:
+      213: -9005152000491405417
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_9
+  - first:
+      213: -7439367535587539821
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_10
+  - first:
+      213: 4678521473302054847
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_11
+  - first:
+      213: 2929804771396799619
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_12
+  - first:
+      213: -3894088956854494930
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_13
+  - first:
+      213: -763229608049632651
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_14
+  - first:
+      213: -2275947539462515096
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_15
+  - first:
+      213: 6550230348935487932
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_16
+  - first:
+      213: -5745304001008015687
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_17
+  - first:
+      213: -8670802307423534288
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_18
+  - first:
+      213: 5897088662277803288
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_19
+  - first:
+      213: 4800197291135688685
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_20
+  - first:
+      213: -7481089848055092703
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_21
+  - first:
+      213: 8038733640972515862
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_22
+  - first:
+      213: -3522188251602970343
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_23
+  - first:
+      213: -3602280383354420538
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_24
+  - first:
+      213: 7736719686193732076
+    second: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1089
+        width: 520
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32b7c3c875717a50800000000000000
+      internalID: 6517119297322988090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 913
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d672a736a6833ee40800000000000000
+      internalID: 5684449184258336621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 913
+        width: 110
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce19fd5d8b68dddb0800000000000000
+      internalID: -4765504702267813396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 913
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a099898dc3cd9c20800000000000000
+      internalID: 3214940996555608226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_4
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 913
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f45f61ebeb4a840800000000000000
+      internalID: 5234518390549598098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 737
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249101cadaea08920800000000000000
+      internalID: 2990582213513320770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 737
+        width: 110
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c7e35f4b49aa130800000000000000
+      internalID: 3578836358828817526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_7
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 737
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21acd5c96da6ba190800000000000000
+      internalID: -7950143247213540846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 737
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10eab003dc3bae060800000000000000
+      internalID: 6983591866047114753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 562
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fbf4687f5470380800000000000000
+      internalID: -9005152000491405417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 562
+        width: 110
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944bbf44ae02c890800000000000000
+      internalID: -7439367535587539821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 562
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7c43afd727de040800000000000000
+      internalID: 4678521473302054847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 562
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cc954bae1c8a820800000000000000
+      internalID: 2929804771396799619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 386
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e299aeab9ba65f9c0800000000000000
+      internalID: -3894088956854494930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 386
+        width: 110
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a142a17b67865f0800000000000000
+      internalID: -763229608049632651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_15
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 386
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86699e675c53a60e0800000000000000
+      internalID: -2275947539462515096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 386
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb168493cc717ea50800000000000000
+      internalID: 6550230348935487932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 211
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6694573749440b0800000000000000
+      internalID: -5745304001008015687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_18
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 211
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0330264cd3f1ba780800000000000000
+      internalID: -8670802307423534288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_19
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 211
+        width: 110
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d4d0ce4eaa6d150800000000000000
+      internalID: 5897088662277803288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_20
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 211
+        width: 111
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def5fe5f00abd9240800000000000000
+      internalID: 4800197291135688685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a25e17b64dd2890800000000000000
+      internalID: -7481089848055092703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_22
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 35
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a362ac7a15f8f60800000000000000
+      internalID: 8038733640972515862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 35
+        width: 110
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919962f427cae1fc0800000000000000
+      internalID: -3522188251602970343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_24
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 35
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c24dc8b311220ec0800000000000000
+      internalID: -3602280383354420538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-fruit-vegetable-flash-cards-busy-little-bugs-fruits-chart-for-preschool-522x1148_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 391
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9595e40995e5b60800000000000000
+      internalID: 7736719686193732076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
