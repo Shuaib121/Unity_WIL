@@ -26,12 +26,15 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Main Menu"));
     }
 
-    public void FlashcardsScene()//loads main menu
+    public void FlashcardsScene()//loads flashcard scene
     {
         StartCoroutine(DelayNextScene("Flashcards"));
     }
 
-
+    public void PuzzleScene()//loads puzzle scene
+    {
+        StartCoroutine(DelayNextScene("Puzzle"));
+    }
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
     {
         yield return new WaitForSeconds(0.2f);

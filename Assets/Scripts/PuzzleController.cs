@@ -45,7 +45,7 @@ public class PuzzleController : MonoBehaviour
             if(!played)
             {
                 winParticle.GetComponent<ParticleSystem>().Play();
-                AudioSource.PlayClipAtPoint(winSound, winParticle.transform.position,0.75f);
+                AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position , 0.5f);
                 played = true;
             }
 
