@@ -50,6 +50,7 @@ Material:
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
+    - _CullMode: 0
     - _Diffuse: 0.5
     - _FaceDilate: 0.1
     - _FaceShininess: 0.8
@@ -79,7 +80,7 @@ Material:
     - _Sharpness: 0
     - _SpecularPower: 2
     - _Stencil: 0
-    - _StencilComp: 8
+    - _StencilComp: 0
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
