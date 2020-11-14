@@ -5,22 +5,49 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Android Ultimate TTS/Demo/DemoScene.unity
     guid: f77a8783c1310264e9683cb88b8b6b78
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: 3709878cbf7e4824580c99fe9a8df7cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StorySelection.unity
     guid: 0cf39de2df81ec241a189126953608e2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Story.unity
     guid: 6af9a44fdaf6b6b4ca700e547825a5b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Flashcards.unity
     guid: 9e5b2828c35f092419abbeee6a8c1d30
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle.unity
     guid: 63566379d4b89d8439ff6db6cd972988
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/00_MainMenu.unity
+    guid: d3ae9f7ec596961439924abaadd14484
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/01_SimpleQuery.unity
+    guid: 231169a776cdf93438a6127e94116c35
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/02_ComplexQuery.unity
+    guid: 75c07e6ace008fc43a4cfd99e4b4293e
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/04_UpdateDelete.unity
+    guid: 5ef4dd8abd69dbf4aa4d61de29d33ec9
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/05_CreateAlterAndDropTable.unity
+    guid: 9ae46d2c859e81e4cb655bad5dc00460
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/06_SimpleTable.unity
+    guid: 0890bd3cce87749a1a70e18575793e72
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/07_Blobs.unity
+    guid: cf03063777622468ab505d8779ff98b7
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/08_FullTextSearch.unity
+    guid: 87e2fecc98b444c6494889349649e9a7
+  - enabled: 0
+    path: Assets/SimpleSQL/Demos/09_AttachDatabase.unity
+    guid: c17d9cef5fd6a467d9fea3909638fdc2
   m_configObjects: {}
