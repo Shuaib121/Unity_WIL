@@ -309,7 +309,7 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PopluateStoryCards
+      value: SetTitle
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
@@ -319,13 +319,13 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: StoryButton, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1299719664}
+      objectReference: {fileID: 25624534}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -353,6 +353,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 592e196efc9de924dbaa691146814cf3, type: 3}
+--- !u!1 &25624534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419064740056970615, guid: 592e196efc9de924dbaa691146814cf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 25624533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &87067099
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +942,7 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PopluateStoryCards
+      value: SetTitle
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
@@ -946,13 +952,13 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: StoryButton, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1214210496}
+      objectReference: {fileID: 355486697}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -980,6 +986,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 592e196efc9de924dbaa691146814cf3, type: 3}
+--- !u!1 &355486697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419064740056970615, guid: 592e196efc9de924dbaa691146814cf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 355486696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534196899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1584,7 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PopluateStoryCards
+      value: SetTitle
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
@@ -1582,13 +1594,13 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: StoryButton, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1852756175}
+      objectReference: {fileID: 1016209091}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1616,6 +1628,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 592e196efc9de924dbaa691146814cf3, type: 3}
+--- !u!1 &1016209091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419064740056970615, guid: 592e196efc9de924dbaa691146814cf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1016209090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1051698043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,18 +1814,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1864719071}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1214210496 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4408369540411771813, guid: 592e196efc9de924dbaa691146814cf3,
-    type: 3}
-  m_PrefabInstance: {fileID: 355486696}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a0601029a47cf4448f871d0c16b7aad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1248394983 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8419064740056970614, guid: 592e196efc9de924dbaa691146814cf3,
@@ -1820,30 +1826,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 355486696}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1288019152 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4408369540411771813, guid: 592e196efc9de924dbaa691146814cf3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7271288476839731015}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a0601029a47cf4448f871d0c16b7aad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1299719664 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4408369540411771813, guid: 592e196efc9de924dbaa691146814cf3,
-    type: 3}
-  m_PrefabInstance: {fileID: 25624533}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a0601029a47cf4448f871d0c16b7aad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1303806961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,18 +2261,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 592e196efc9de924dbaa691146814cf3, type: 3}
---- !u!114 &1852756175 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4408369540411771813, guid: 592e196efc9de924dbaa691146814cf3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1016209090}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a0601029a47cf4448f871d0c16b7aad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1864719071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3424,17 +3394,17 @@ PrefabInstance:
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: StoryButton, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1288019152}
+      objectReference: {fileID: 7271288476839731016}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PopluateStoryCards
+      value: SetTitle
       objectReference: {fileID: 0}
     - target: {fileID: 8419064740056970617, guid: 592e196efc9de924dbaa691146814cf3,
         type: 3}
@@ -3488,6 +3458,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 592e196efc9de924dbaa691146814cf3, type: 3}
+--- !u!1 &7271288476839731016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419064740056970615, guid: 592e196efc9de924dbaa691146814cf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7271288476839731015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9134165757245057911
 PrefabInstance:
   m_ObjectHideFlags: 0

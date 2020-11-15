@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.000011, y: 960.0001}
+  m_AnchoredPosition: {x: -11.000011, y: 960}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &87067101
@@ -1248,6 +1248,36 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.18655096
       objectReference: {fileID: 0}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 566052699}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MCQSelectionScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8694072451274686558, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
       propertyPath: m_Name
@@ -1447,7 +1477,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1621354428}
   m_HandleRect: {fileID: 1621354427}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1671,7 +1701,7 @@ PrefabInstance:
     - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FlashcardsScene
+      value: FlashSelection
       objectReference: {fileID: 0}
     - target: {fileID: 8694072451274686544, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}

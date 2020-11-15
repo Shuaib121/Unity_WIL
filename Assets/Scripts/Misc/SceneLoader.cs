@@ -13,9 +13,9 @@ public class SceneLoader : MonoBehaviour
 
     public void StorySelectionScene() //loads the story selection screen
     {
-        if(FindObjectOfType<StoryPictures>())
+        if(FindObjectOfType<ChosenOption>())
         {
-            Destroy(FindObjectOfType<StoryPictures>());
+            Destroy(FindObjectOfType<ChosenOption>());
         }
 
         StartCoroutine(DelayNextScene("StorySelection"));
@@ -23,21 +23,42 @@ public class SceneLoader : MonoBehaviour
 
     public void MainMenu()//loads main menu
     {
+        var optionObject = FindObjectsOfType<ChosenOption>();
+        foreach(var option in optionObject)
+        {
+            Destroy(option.gameObject);
+        }
+
         StartCoroutine(DelayNextScene("Main Menu"));
     }
+
+    public void MCQScene()//loads MCQScene
+    {
+        StartCoroutine(DelayNextScene("MCQ"));
+    }
+
+    public void MCQSelectionScene()//loads MCQSelectionScene
+    {
+        StartCoroutine(DelayNextScene("MCQSelection"));
+    }
+
 
     public void FlashcardsScene()//loads flashcard scene
     {
         StartCoroutine(DelayNextScene("Flashcards"));
     }
 
+    public void FlashSelection() //loads flashselection scene
+    {
+        StartCoroutine(DelayNextScene("FlashSelection"));
+    }
     public void PuzzleScene()//loads puzzle scene
     {
         StartCoroutine(DelayNextScene("Puzzle"));
     }
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
 
         SceneManager.LoadScene(scene);
     }

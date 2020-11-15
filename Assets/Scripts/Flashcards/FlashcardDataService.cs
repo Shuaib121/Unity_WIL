@@ -64,64 +64,64 @@ public class FlashcardDataService : MonoBehaviour
         Debug.Log("Final PATH: " + dbPath);
     }
 
-	public void CreateDB()
-	{
-		_connection.DropTable<FlashcardsTable>();
-		_connection.CreateTable<FlashcardsTable>();
+    public void CreateDB()
+    {
+        _connection.DropTable<FlashcardsTable>();
+        _connection.CreateTable<FlashcardsTable>();
 
-		_connection.InsertAll(new[]{
-			new FlashcardsTable{
+        _connection.InsertAll(new[]{
+            new FlashcardsTable{
 				//Id = 1,
 				FlashcardName = "TEST",
-				Category = "MORETEST",
-			},
-			new FlashcardsTable{
+                Category = "MORETEST",
+            },
+            new FlashcardsTable{
 				//Id = 1,
 				FlashcardName = "TEST",
-				Category = "MORETEST",
-			},
-			new FlashcardsTable{
+                Category = "MORETEST",
+            },
+            new FlashcardsTable{
 				//Id = 1,
 				FlashcardName = "TEST",
-				Category = "MORETEST",
-			}
+                Category = "MORETEST",
+            }
 
-		});
-	}
+        });
+    }
 
-	//public void AddImage()
-	//{
-	//	var path = imagePath.text.Trim();
+    //public void AddImage()
+    //{
+    //	var path = imagePath.text.Trim();
 
-	//	// check that the path exists
-	//	if (!File.Exists(path))
-	//	{
-	//		Debug.LogError("Path does not exist! " + imagePath.text);
-	//		return;
-	//	}
+    //	// check that the path exists
+    //	if (!File.Exists(path))
+    //	{
+    //		Debug.LogError("Path does not exist! " + imagePath.text);
+    //		return;
+    //	}
 
-	//	var id = 1;
-	//	// read the bytes of the file from the path
-	//	var imageData = File.ReadAllBytes(path);
+    //	var id = 1;
+    //	// read the bytes of the file from the path
+    //	var imageData = File.ReadAllBytes(path);
 
-	//	// get the next ID from the database
-	//	var sql = "SELECT MAX(ID) + 1 ID FROM Images";
-	//	bool recordExists;
-	//	var result = dbManager.QueryFirstRecord<Images>(out recordExists, sql);
-	//	if (recordExists)
-	//	{
-	//		id = result.ID;
-	//	}
+    //	// get the next ID from the database
+    //	var sql = "SELECT MAX(ID) + 1 ID FROM Images";
+    //	bool recordExists;
+    //	var result = dbManager.QueryFirstRecord<Images>(out recordExists, sql);
+    //	if (recordExists)
+    //	{
+    //		id = result.ID;
+    //	}
 
-	//	// insert the image as a byte array
-	//	sql = "INSERT INTO Images (ID, ImageData) VALUES (?, ?)";
-	//	dbManager.Execute(sql, id, imageData);
+    //	// insert the image as a byte array
+    //	sql = "INSERT INTO Images (ID, ImageData) VALUES (?, ?)";
+    //	dbManager.Execute(sql, id, imageData);
 
-	//	// reload images
-	//	LoadImages();
-	//}
+    //	// reload images
+    //	LoadImages();
+    //}
 
-	public IEnumerable<FlashcardsTable> GetFlashcard()
+    public IEnumerable<FlashcardsTable> GetFlashcard()
 	{
 		return _connection.Table<FlashcardsTable>();
 	}
