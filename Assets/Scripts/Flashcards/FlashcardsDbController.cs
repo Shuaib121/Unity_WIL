@@ -15,7 +15,6 @@ public class FlashcardsDbController : MonoBehaviour
         LoadImages();
     }
 
-
     private void LoadImages()
     {
         var flashcards = ds.GetFlashcard();

@@ -115,7 +115,7 @@ public class MCQController : MonoBehaviour
         ansBtnTwo.text = list[questionNumber].optionTwo;
         ansBtnThree.text = list[questionNumber].optionThree;
         ansBtnFour.text = list[questionNumber].optionFour;
-     
+
     }
 
     private void CheckAnswer(TextMeshProUGUI chosenAnswer)
