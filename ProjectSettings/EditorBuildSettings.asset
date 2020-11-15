@@ -23,31 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle.unity
     guid: 63566379d4b89d8439ff6db6cd972988
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/00_MainMenu.unity
-    guid: d3ae9f7ec596961439924abaadd14484
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/01_SimpleQuery.unity
-    guid: 231169a776cdf93438a6127e94116c35
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/02_ComplexQuery.unity
-    guid: 75c07e6ace008fc43a4cfd99e4b4293e
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/04_UpdateDelete.unity
-    guid: 5ef4dd8abd69dbf4aa4d61de29d33ec9
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/05_CreateAlterAndDropTable.unity
-    guid: 9ae46d2c859e81e4cb655bad5dc00460
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/06_SimpleTable.unity
-    guid: 0890bd3cce87749a1a70e18575793e72
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/07_Blobs.unity
-    guid: cf03063777622468ab505d8779ff98b7
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/08_FullTextSearch.unity
-    guid: 87e2fecc98b444c6494889349649e9a7
-  - enabled: 0
-    path: Assets/SimpleSQL/Demos/09_AttachDatabase.unity
-    guid: c17d9cef5fd6a467d9fea3909638fdc2
+  - enabled: 1
+    path: Assets/Scenes/FlashCardsTest.unity
+    guid: 2a58f685774d6eb4ba519b9f31e6abda
+  - enabled: 1
+    path: Assets/Scenes/FlashSelection.unity
+    guid: fcc58ad24233a4640a7963a2066455be
+  - enabled: 1
+    path: Assets/Scenes/MCQSelection.unity
+    guid: 39c1af7ecf6c83542bb388b1cdbb9fc1
+  - enabled: 1
+    path: Assets/Scenes/MCQ.unity
+    guid: 5ffe053fdaae5554286a4e18dff70505
   m_configObjects: {}
