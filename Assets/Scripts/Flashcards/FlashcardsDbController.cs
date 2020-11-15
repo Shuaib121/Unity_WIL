@@ -21,7 +21,7 @@ public class FlashcardsDbController : MonoBehaviour
 
         //LoadImage();  //Loads images into the scene
 
-        //DeleteImage(); //Delete all images from the db 
+        //DeleteImage(); //Delete all images from the db
 
     }
 
@@ -31,7 +31,7 @@ public class FlashcardsDbController : MonoBehaviour
         List<string> paths = new List<string>();
         foreach(Sprite sprite in images)
         {
-            paths.Add(AssetDatabase.GetAssetPath(sprite));
+            //paths.Add(AssetDatabase.GetAssetPath(sprite));
         }
 
         foreach(string path in paths)
@@ -49,8 +49,7 @@ public class FlashcardsDbController : MonoBehaviour
 
             // get the next ID from the database
             var sql = "SELECT MAX(ID) + 1 ID FROM FlashcardsTable";
-            bool recordExists;
-            var result = dbManager.QueryFirstRecord<FlashcardsTable>(out recordExists, sql);
+            var result = dbManager.QueryFirstRecord<FlashcardsTable>(out bool recordExists, sql);
             if (recordExists)
             {
                 id = result.ID;
