@@ -1,5 +1,4 @@
-﻿using Assets.Scripts;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -20,7 +19,9 @@ public class MCQController : MonoBehaviour
 
     private int score = 0;
     private int questionNumber = 0;
-    List<MCQObject> list = new List<MCQObject>();
+    List<MCQTable>list = new List<MCQTable>();
+    private DataService ds = new DataService("MainDatabase.db");
+    private string mcqTitle;
 
     private void Update()
     {
@@ -37,66 +38,21 @@ public class MCQController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        MCQObject Q1 = new MCQObject()
-        {
-            question = "What colour is the sun?",
-            optionOne = "Black",
-            optionTwo = "Blue",
-            optionThree = "Purple",
-            optionFour = "Yellow",
-            answer = "Yellow"
-        };
-
-        MCQObject Q2 = new MCQObject()
-        {
-            question = "What colour is the Moon",
-            optionOne = "Black",
-            optionTwo = "White",
-            optionThree = "Purple",
-            optionFour = "Yellow",
-            answer = "White"
-        };
-
-        MCQObject Q3 = new MCQObject()
-        {
-            question = "What colour is a Lion?",
-            optionOne = "Black",
-            optionTwo = "Blue",
-            optionThree = "Brown",
-            optionFour = "Yellow",
-            answer = "Brown"
-        };
-
-        MCQObject Q4 = new MCQObject()
-        {
-            question = "What is 1+1?",
-            optionOne = "3",
-            optionTwo = "7",
-            optionThree = "69",
-            optionFour = "2",
-            answer = "2"
-        };
-
-        MCQObject Q5 = new MCQObject()
-        {
-            question = "What is 10+10",
-            optionOne = "13",
-            optionTwo = "17",
-            optionThree = "21",
-            optionFour = "20",
-            answer = "20"
-        };
-
-        list.Add(Q1);
-        list.Add(Q2);
-        list.Add(Q3);
-        list.Add(Q4);
-        list.Add(Q5);
-
+        mcqTitle = FindObjectOfType<ChosenOption>().GetTitle();
+        PopulateList();
         DisplayFirstOption();
     }
-
+    public void PopulateList()
+    {
+        var mcq = ds.GetMCQ();
+        foreach (var questionData in mcq)
+        {
+            if (questionData.testName == mcqTitle)
+            {
+                list.Add(questionData);
+            }
+        }
+    }
 
     private void DisplayFirstOption()
     {
