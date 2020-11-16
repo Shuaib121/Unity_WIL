@@ -4,6 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using Lean.Transition;
+using System;
 
 namespace Lean.Gui
 {
@@ -168,7 +169,7 @@ namespace Lean.Gui
 				onClick.Invoke();
 			}
 		}
-	}
+    }
 }
 
 #if UNITY_EDITOR

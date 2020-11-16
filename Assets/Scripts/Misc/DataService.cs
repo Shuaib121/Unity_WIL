@@ -71,6 +71,12 @@ public class DataService : MonoBehaviour
         return _connection.Table<StorycardsTable>();
     }
 
+    public IEnumerable<StoryTable> GetStory()
+    {
+        return _connection.Table<StoryTable>();
+    }
+
+
     public IEnumerable<MCQTable> GetMCQ()
     {
         return _connection.Table<MCQTable>();

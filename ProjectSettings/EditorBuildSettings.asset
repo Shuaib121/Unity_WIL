@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MCQ.unity
     guid: 5ffe053fdaae5554286a4e18dff70505
+  - enabled: 1
+    path: Assets/Scenes/NormalStories.unity
+    guid: 77a952be91322f84087be1620709f2f2
   m_configObjects: {}

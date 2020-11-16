@@ -11,6 +11,11 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Story")); //loads the story scene to display chosen story
     }
 
+    public void MainStoryScene()
+    {
+        StartCoroutine(DelayNextScene("NormalStories")); //loads the story scene to display chosen story
+    }
+
     public void StorySelectionScene() //loads the story selection screen
     {
         if(FindObjectOfType<ChosenOption>())

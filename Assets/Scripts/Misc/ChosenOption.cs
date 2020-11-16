@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Lean.Gui;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,11 @@ public class ChosenOption : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    private void Start()
+    {
+
     }
 
     public void SetTitle(GameObject chosenOption)// populates list with story pictures
