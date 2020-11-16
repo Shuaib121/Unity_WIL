@@ -1507,7 +1507,17 @@ PrefabInstance:
     - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FlashSelection
+      value: LoadSceneByName
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Selection
       objectReference: {fileID: 0}
     - target: {fileID: 1102555224562292061, guid: db140edf7439f8a47a1279a35c720bad,
         type: 3}

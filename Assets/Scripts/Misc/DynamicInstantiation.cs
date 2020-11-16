@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using Lean.Gui;
 using TMPro;
+using System.Collections.Generic;
 
 public class DynamicInstantiation : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class DynamicInstantiation : MonoBehaviour
 
     void Start()
     {
-        GenerateMenuItem("Cleaning", "test description", null, "Story");
+        GenerateButtonsFromList();
     }
 
     public void GenerateMenuItem(string title, string description, Image icon, string scene)
@@ -31,7 +32,36 @@ public class DynamicInstantiation : MonoBehaviour
 
     void OnMenuItemClick(string scene, string title)
     {
-        GameObject.Find("Logic").GetComponent<ChosenOption>().SetTitle(gameObject);
+        GameObject.Find("Logic").GetComponent<ChosenOption>().SetTitle(title);
         GameObject.Find("Logic").GetComponent<SceneLoader>().LoadSceneByName(scene);
+    }
+
+    void GenerateButtonsFromList()
+    {
+        var stateController = FindObjectOfType<StateController>();
+        int index = stateController.GetIndex();
+        if(index == 0)
+        {
+            foreach (var btn in stateController.GetFlashTitles())
+            {
+                GenerateMenuItem(btn.FlashcardTitle, null, null, "Flashcards");
+            }
+        }
+
+        if (index == 1)
+        {
+            foreach (var btn in stateController.GetSocialTitles())
+            {
+                GenerateMenuItem(btn.StoryTitles,null,null,"Story");
+            }
+        }
+
+        if (index == 2)
+        {
+            foreach (var btn in stateController.GetMcqTitles())
+            {
+                GenerateMenuItem(btn.MCQName, null, null, "MCQ");
+            }
+        }
     }
 }

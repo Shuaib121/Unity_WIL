@@ -8,7 +8,7 @@ using System.Collections.Generic;
 public class StorycardDbController : MonoBehaviour
 {
     private readonly DataService ds = new DataService("MainDatabase.db");
-    List<StorycardsTable> StoryCards = new List<StorycardsTable>();
+    List<SocialStoriesTable> StoryCards = new List<SocialStoriesTable>();
     int Index = 0;
 
     void Start()
@@ -23,7 +23,7 @@ public class StorycardDbController : MonoBehaviour
         var tempList = ds.GetStorycards().ToList();
         foreach (var card in tempList)
         {
-            if (card.SCardCategory == FindObjectOfType<ChosenOption>().GetTitle())
+            if (card.CardCategory == FindObjectOfType<ChosenOption>().GetTitle())
             {
                 StoryCards.Add(card);
             }
@@ -48,13 +48,13 @@ public class StorycardDbController : MonoBehaviour
     {
         Transform image = GameObject.Find("CurrentCardBackground").gameObject.transform.Find("CurrentStoryCard");
         Texture2D texture = new Texture2D(0, 0);
-        texture.LoadImage(StoryCards.ElementAt(Index).SCardImage); ;
+        texture.LoadImage(StoryCards.ElementAt(Index).CardImage); ;
         image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
     }
 
     public void TtsSpeak()
     {
-        string text = StoryCards.ElementAt(Index).SCardText;
+        string text = StoryCards.ElementAt(Index).CardText;
         Debug.Log(text);
         FindObjectOfType<Speech>().SpeakCard(text);
     }

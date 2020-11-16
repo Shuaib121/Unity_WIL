@@ -66,9 +66,19 @@ public class DataService : MonoBehaviour
         Debug.Log("Final PATH: " + dbPath);
     }
 
-    public IEnumerable<StorycardsTable> GetStorycards()
+    public IEnumerable<SocialStoriesTable> GetStorycards()
     {
-        return _connection.Table<StorycardsTable>();
+        return _connection.Table<SocialStoriesTable>();
+    }
+
+    public IEnumerable<SocialStoriesTitleTable> GetStorycardTitles()
+    {
+        return _connection.Table<SocialStoriesTitleTable>();
+    }
+
+    public IEnumerable<StoryTable> GetStories()
+    {
+        return _connection.Table<StoryTable>();
     }
 
     public IEnumerable<MCQTable> GetMCQ()
@@ -76,8 +86,17 @@ public class DataService : MonoBehaviour
         return _connection.Table<MCQTable>();
     }
 
+    public IEnumerable<MCQTitle> GetMCQTitles()
+    {
+        return _connection.Table<MCQTitle>();
+    }
+
     public IEnumerable<FlashcardsTable> GetFlashcard()
     {
         return _connection.Table<FlashcardsTable>();
+    }
+    public IEnumerable<FlashcardsTitleTable> GetFlashcardTitles()
+    {
+        return _connection.Table<FlashcardsTitleTable>();
     }
 }

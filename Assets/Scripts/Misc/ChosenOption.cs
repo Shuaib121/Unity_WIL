@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ChosenOption : MonoBehaviour
 {
-    private string option;
+    [SerializeField] private string option;
 
     void Awake()//checks if a chosenoption objects exists, if true then do not destroy it
     {
@@ -19,9 +19,9 @@ public class ChosenOption : MonoBehaviour
         }
     }
 
-    public void SetTitle(GameObject chosenOption)// populates list with story pictures
+    public void SetTitle(string chosenOption)// populates list with story pictures
     {
-        option = chosenOption.GetComponentInChildren<TextMeshProUGUI>().text;
+        option = chosenOption;
         Debug.Log(option);
     }
 
