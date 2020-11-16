@@ -42,7 +42,7 @@ public class FlashcardDataService : MonoBehaviour
 		var loadDb = Application.dataPath + "/StreamingAssets/" + DatabaseName;  // this is the path to your StreamingAssets in iOS
 		// then save to Application.persistentDataPath
 		File.Copy(loadDb, filepath);
-		
+
 #elif UNITY_STANDALONE_OSX
 		var loadDb = Application.dataPath + "/Resources/Data/StreamingAssets/" + DatabaseName;  // this is the path to your StreamingAssets in iOS
 		// then save to Application.persistentDataPath

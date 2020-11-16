@@ -1,43 +1,41 @@
 ﻿using Lean.Gui;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using System.Collections.Generic;
 
 public class FlashcardsDbController : MonoBehaviour
 {
-    public GameObject screens;
-    private FlashcardDataService ds = new FlashcardDataService("MainDatabase.db");
-    private string flashTitle;
+    private readonly FlashcardDataService ds = new FlashcardDataService("MainDatabase.db");
+    List<FlashcardsTable> FlashCards = new List<FlashcardsTable>();
+    int Index = 0;
+
     void Start()
     {
-        flashTitle = FindObjectOfType<ChosenOption>().GetTitle();
-        LoadImages();
+        FlashCards = ds.GetFlashcard().ToList();
+        DisplayCurrentImage();
     }
 
-    private void LoadImages()
+    public void Next()
     {
-        var flashcards = ds.GetFlashcard();
-        var screens = this.screens.GetComponentsInChildren<BoxCollider2D>();
-        int screenCounter = 0;
-        foreach (var card in flashcards)
-        {
-            if (card.Category == flashTitle)
-            {
-                var texture = new Texture2D(2, 2);
-                texture.LoadImage(card.ImageData);
-
-                screens[screenCounter].gameObject.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-                screenCounter++;
-            }
-        }
-
-        SetActiveScreens(screenCounter);
+        if (Index == FlashCards.Count - 1) return;
+        Index++;
+        DisplayCurrentImage();
     }
 
-    private static void SetActiveScreens(int listSize) // sets amount of screens to be used
+    public void Previous()
     {
-        FindObjectOfType<LeanConstrainAnchoredPosition>().HorizontalRectMin = -listSize + 1;
+        if (Index < 1) return;
+        Index--;
+        DisplayCurrentImage();
     }
 
+    private void DisplayCurrentImage()
+    {
+        Transform image = GameObject.Find("CurrentPictureShape").gameObject.transform.Find("CurrentFlashCard");
+        Texture2D texture = new Texture2D(0, 0);
+        texture.LoadImage(FlashCards.ElementAt(Index).ImageData);;
+        image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+    }
 }
