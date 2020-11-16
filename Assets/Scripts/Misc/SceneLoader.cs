@@ -1,10 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public void LoadSceneByName(string scene)
+    {
+        StartCoroutine(DelayNextScene(scene));
+    }
 
     public void StoryScene()
     {
@@ -52,14 +55,15 @@ public class SceneLoader : MonoBehaviour
     {
         StartCoroutine(DelayNextScene("FlashSelection"));
     }
+
     public void PuzzleScene()//loads puzzle scene
     {
         StartCoroutine(DelayNextScene("Puzzle"));
     }
+
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
     {
         yield return new WaitForSeconds(0.05f);
-
         SceneManager.LoadScene(scene);
     }
 }

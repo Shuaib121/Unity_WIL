@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using Lean.Gui;
+using TMPro;
 
 public class DynamicInstantiation : MonoBehaviour
 {
@@ -10,19 +11,27 @@ public class DynamicInstantiation : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 20; i++)
-        {
-            LeanButton latestButton = Instantiate(Prefab);
-            latestButton.transform.SetParent(Content.transform, false);
-            //latestButton.transform.Find("Text").GetComponent<Text>().text = Random.Range(1, 100).ToString();
-            latestButton.OnClick.AddListener(
-                () => CustomClick(latestButton.transform.Find("Text").GetComponent<Text>().text));
-        }
+        GenerateMenuItem("Cleaning", "test description", null, "Story");
+    }
+
+    public void GenerateMenuItem(string title, string description, Image icon, string scene)
+    {
+        LeanButton latestButton = Instantiate(Prefab);
+        latestButton.transform.SetParent(Content.transform, false);
+
+        latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
+
+        latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = description ?? "";
+
+        latestButton.OnClick.AddListener(
+           () => OnMenuItemClick(scene, title));
+
         View.verticalNormalizedPosition = 1;
     }
 
-    void CustomClick(string text)
+    void OnMenuItemClick(string scene, string title)
     {
-        Debug.Log("IT WORKS - " + text);
+        GameObject.Find("Logic").GetComponent<ChosenOption>().SetTitle(gameObject);
+        GameObject.Find("Logic").GetComponent<SceneLoader>().LoadSceneByName(scene);
     }
 }
