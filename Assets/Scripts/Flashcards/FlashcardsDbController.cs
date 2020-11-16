@@ -11,6 +11,7 @@ public class FlashcardsDbController : MonoBehaviour
     List<FlashcardsTable> FlashCards = new List<FlashcardsTable>();
     int Index = 0;
 
+
     void Start()
     {
         FlashCards = ds.GetFlashcard().ToList();
@@ -37,5 +38,11 @@ public class FlashcardsDbController : MonoBehaviour
         Texture2D texture = new Texture2D(0, 0);
         texture.LoadImage(FlashCards.ElementAt(Index).ImageData);;
         image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+    }
+
+    public void TtsSpeak()
+    {
+        string text = FlashCards.ElementAt(Index).FlashcardText;
+        FindObjectOfType<Speech>().SpeakCard(text);
     }
 }

@@ -38,4 +38,11 @@ public class StorycardDbController : MonoBehaviour
         texture.LoadImage(StoryCards.ElementAt(Index).SCardImage); ;
         image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
     }
+
+    public void TtsSpeak()
+    {
+        string text = StoryCards.ElementAt(Index).SCardText;
+        Debug.Log(text);
+        FindObjectOfType<Speech>().SpeakCard(text);
+    }
 }

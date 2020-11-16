@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle.unity
     guid: 63566379d4b89d8439ff6db6cd972988
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/FlashSelection.unity
     guid: fcc58ad24233a4640a7963a2066455be
