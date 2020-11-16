@@ -13,8 +13,21 @@ public class StorycardDbController : MonoBehaviour
 
     void Start()
     {
-        StoryCards = ds.GetStorycards().ToList();
+        //StoryCards = ds.GetStorycards().ToList();
+        Initialize();
         DisplayCurrentImage();
+    }
+
+    public void Initialize()
+    {
+        var tempList = ds.GetStorycards().ToList();
+        foreach (var card in tempList)
+        {
+            if (card.SCardCategory == FindObjectOfType<ChosenOption>().GetTitle())
+            {
+                StoryCards.Add(card);
+            }
+        }
     }
 
     public void Next()

@@ -7,15 +7,28 @@ using System.Collections.Generic;
 
 public class FlashcardsDbController : MonoBehaviour
 {
-    private readonly FlashcardDataService ds = new FlashcardDataService("MainDatabase.db");
+    private readonly DataService ds = new DataService("MainDatabase.db");
     List<FlashcardsTable> FlashCards = new List<FlashcardsTable>();
     int Index = 0;
 
 
     void Start()
     {
-        FlashCards = ds.GetFlashcard().ToList();
+        //FlashCards = ds.GetFlashcard().ToList();
+        Initialize();
         DisplayCurrentImage();
+    }
+
+    public void Initialize()
+    {
+        var tempList = ds.GetFlashcard().ToList();
+        foreach (var card in tempList)
+        {
+            if (card.Category == FindObjectOfType<ChosenOption>().GetTitle())
+            {
+                FlashCards.Add(card);
+            }
+        }
     }
 
     public void Next()
