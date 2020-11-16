@@ -1,44 +1,41 @@
 ﻿using Lean.Gui;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using System.Collections.Generic;
 
 public class StorycardDbController : MonoBehaviour
 {
-    public GameObject screens;
-    private DataService ds = new DataService("MainDatabase.db");
-    private string storyTitle;
+    private readonly DataService ds = new DataService("MainDatabase.db");
+    List<StorycardsTable> StoryCards = new List<StorycardsTable>();
+    int Index = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        storyTitle = FindObjectOfType<ChosenOption>().GetTitle();
-        LoadImages();
+        StoryCards = ds.GetStorycards().ToList();
+        DisplayCurrentImage();
     }
 
-    private void LoadImages()
+    public void Next()
     {
-        var flashcards = ds.GetStorycards();
-        var screens = this.screens.GetComponentsInChildren<BoxCollider2D>();
-        int screenCounter = 0;
-        foreach (var card in flashcards)
-        {
-            if (card.SCardCategory == storyTitle)
-            {
-                var texture = new Texture2D(2, 2);
-                texture.LoadImage(card.SCardImage);
-
-                screens[screenCounter].gameObject.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-                screenCounter++;
-            }
-
-            SetActiveScreens(screenCounter);
-        }
+        if (Index == StoryCards.Count - 1) return;
+        Index++;
+        DisplayCurrentImage();
     }
 
-    private static void SetActiveScreens(int listSize) // sets amount of screens to be used
+    public void Previous()
     {
-        FindObjectOfType<LeanConstrainAnchoredPosition>().HorizontalRectMin = -listSize + 1;
+        if (Index < 1) return;
+        Index--;
+        DisplayCurrentImage();
+    }
+
+    private void DisplayCurrentImage()
+    {
+        Transform image = GameObject.Find("CurrentCardBackground").gameObject.transform.Find("CurrentStoryCard");
+        Texture2D texture = new Texture2D(0, 0);
+        texture.LoadImage(StoryCards.ElementAt(Index).SCardImage); ;
+        image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
     }
 }

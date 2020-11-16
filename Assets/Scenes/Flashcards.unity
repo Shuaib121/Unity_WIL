@@ -363,7 +363,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -100, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754734687
 MonoBehaviour:
@@ -831,7 +831,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 777.77856, y: 1166.668}
+  m_SizeDelta: {x: 800, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990405184
 MonoBehaviour:
@@ -1610,6 +1610,11 @@ PrefabInstance:
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1329919712}
+    - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FlashSelection
+      objectReference: {fileID: 0}
     - target: {fileID: 1102555224562292061, guid: db140edf7439f8a47a1279a35c720bad,
         type: 3}
       propertyPath: m_Name
