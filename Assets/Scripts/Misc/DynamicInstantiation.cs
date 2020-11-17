@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using Lean.Gui;
 using TMPro;
-using System.Collections.Generic;
 
 public class DynamicInstantiation : MonoBehaviour
 {
@@ -16,14 +15,14 @@ public class DynamicInstantiation : MonoBehaviour
         GenerateButtonsFromList();
     }
 
-    public void GenerateMenuItem(string title, string description, Image icon, string scene)
+    public void GenerateMenuItem(string title, Image icon, string scene)
     {
         LeanButton latestButton = Instantiate(Prefab);
         latestButton.transform.SetParent(Content.transform, false);
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
 
-        latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = description ?? "";
+        //latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = description ?? "";
 
         latestButton.OnClick.AddListener(
            () => OnMenuItemClick(scene, title));
@@ -39,6 +38,12 @@ public class DynamicInstantiation : MonoBehaviour
 
     void GenerateButtonsFromList()
     {
+        for (int i = 0; i < 10; i++)
+        {
+            GenerateMenuItem("test", null, "Flashcards");
+        }
+
+
         var stateController = FindObjectOfType<StateController>();
         int index = stateController.GetIndex();
         if(index == 0)
@@ -47,9 +52,9 @@ public class DynamicInstantiation : MonoBehaviour
             {
                 if(btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.FlashcardTitle, null, null, "Flashcards");
+                    GenerateMenuItem(btn.FlashcardTitle, null, "Flashcards");
                 }
-                
+
             }
         }
 
@@ -60,7 +65,7 @@ public class DynamicInstantiation : MonoBehaviour
                 Debug.Log(btn.Language + "    " + PlayerPrefs.GetInt(LANGUAGE));
                 if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.StoryTitles, null, null, "Story");
+                    GenerateMenuItem(btn.StoryTitles, null, "Story");
                 }
             }
         }
@@ -71,7 +76,7 @@ public class DynamicInstantiation : MonoBehaviour
             {
                 if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.MCQName, null, null, "MCQ");
+                    GenerateMenuItem(btn.MCQName, null, "MCQ");
                 }
 
             }
