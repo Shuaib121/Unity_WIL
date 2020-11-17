@@ -459,6 +459,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 444089036}
+        m_MethodName: UpdateLanguage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &348931916
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 444089034}
   - component: {fileID: 444089035}
+  - component: {fileID: 444089036}
   m_Layer: 5
   m_Name: Language
   m_TagString: Untagged
@@ -651,6 +663,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   languagePopup: {fileID: 3681110633486182954}
+--- !u!114 &444089036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444089033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b41898226c69f49b7c705ef4b55d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashText: {fileID: 1172927940}
+  socialStoryText: {fileID: 1362972491}
+  mcqText: {fileID: 1784609909}
+  puzzleText: {fileID: 2075845631}
 --- !u!1 &483391875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2411739109671538733, guid: bb73611f0c34422408a506a5e43af9f9,
@@ -1364,7 +1392,7 @@ PrefabInstance:
     - target: {fileID: 8694072451274686558, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
       propertyPath: m_Name
-      value: StoriesButton
+      value: SocialStoriesButton
       objectReference: {fileID: 0}
     - target: {fileID: 8694072451274686559, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
@@ -1556,6 +1584,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7537271277393554030}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1172927940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7537271277393554030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172927938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!111 &1172927942
 Animation:
   m_ObjectHideFlags: 0
@@ -1775,6 +1815,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1096594516}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1362972491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1096594516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362972489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!111 &1362972493
 Animation:
   m_ObjectHideFlags: 0
@@ -2726,6 +2778,11 @@ PrefabInstance:
       propertyPath: m_enableWordWrapping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7537271276416528991, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3007,6 +3064,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1702640963}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1784609909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1702640963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784609907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!111 &1784609911
 Animation:
   m_ObjectHideFlags: 0
@@ -3296,6 +3365,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1411821107}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2075845631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411821107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075845629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!111 &2075845633
 Animation:
   m_ObjectHideFlags: 0
@@ -3534,6 +3615,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 444089035}
         m_MethodName: SetEnglish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 444089036}
+        m_MethodName: UpdateLanguage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4625,7 +4717,7 @@ PrefabInstance:
     - target: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4269505403
+      value: 4286282619
       objectReference: {fileID: 0}
     - target: {fileID: 7537271276416528988, guid: c8940c051ffe8eb459528db3a52c1d6a,
         type: 3}
