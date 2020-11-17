@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class DynamicInstantiation : MonoBehaviour
 {
+    private const string LANGUAGE = "Language";
     public ScrollRect View;
     public GameObject Content;
     public LeanButton Prefab;
@@ -44,7 +45,11 @@ public class DynamicInstantiation : MonoBehaviour
         {
             foreach (var btn in stateController.GetFlashTitles())
             {
-                GenerateMenuItem(btn.FlashcardTitle, null, null, "Flashcards");
+                if(btn.Language == PlayerPrefs.GetInt(LANGUAGE))
+                {
+                    GenerateMenuItem(btn.FlashcardTitle, null, null, "Flashcards");
+                }
+                
             }
         }
 
@@ -52,7 +57,11 @@ public class DynamicInstantiation : MonoBehaviour
         {
             foreach (var btn in stateController.GetSocialTitles())
             {
-                GenerateMenuItem(btn.StoryTitles,null,null,"Story");
+                Debug.Log(btn.Language + "    " + PlayerPrefs.GetInt(LANGUAGE));
+                if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
+                {
+                    GenerateMenuItem(btn.StoryTitles, null, null, "Story");
+                }
             }
         }
 
@@ -60,7 +69,11 @@ public class DynamicInstantiation : MonoBehaviour
         {
             foreach (var btn in stateController.GetMcqTitles())
             {
-                GenerateMenuItem(btn.MCQName, null, null, "MCQ");
+                if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
+                {
+                    GenerateMenuItem(btn.MCQName, null, null, "MCQ");
+                }
+
             }
         }
     }

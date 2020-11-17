@@ -7,4 +7,5 @@ public class StoryTable
     public int ID { get; set; }
     public string StoryName { get; set; }
     public string StoryText { get; set; }
+    public int Language { get; set; }
 }
