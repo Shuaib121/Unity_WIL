@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Lean.Gui;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class LanguageSelection : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey(LANGUAGE))
         {
-            languagePopup.SetActive(true);
+            languagePopup.GetComponent<LeanWindow>().TurnOn();
         }
     }
     public void SetEnglish()
@@ -25,4 +26,6 @@ public class LanguageSelection : MonoBehaviour
     {
         PlayerPrefs.SetInt(LANGUAGE, AFRIKAANS);
     }
+
+    
 }
