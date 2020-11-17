@@ -7,4 +7,5 @@ public class MCQTitle
     public int ID { get; set; }
     public string MCQName { get; set; }
     public int Language { get; set; }
+    public byte[] Icon { get; set; }
 }

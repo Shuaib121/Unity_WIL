@@ -15,12 +15,14 @@ public class DynamicInstantiation : MonoBehaviour
         GenerateButtonsFromList();
     }
 
-    public void GenerateMenuItem(string title, Image icon, string scene)
+    public void GenerateMenuItem(string title, Sprite icon, string scene)
     {
         LeanButton latestButton = Instantiate(Prefab);
         latestButton.transform.SetParent(Content.transform, false);
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
+
+        latestButton.transform.Find("IconBackground").GetComponent<Image>().sprite = icon;
 
         //latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = description ?? "";
 
@@ -38,12 +40,7 @@ public class DynamicInstantiation : MonoBehaviour
 
     void GenerateButtonsFromList()
     {
-        for (int i = 0; i < 10; i++)
-        {
-            GenerateMenuItem("test", null, "Flashcards");
-        }
-
-
+       
         var stateController = FindObjectOfType<StateController>();
         int index = stateController.GetIndex();
         if(index == 0)
@@ -52,9 +49,9 @@ public class DynamicInstantiation : MonoBehaviour
             {
                 if(btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.FlashcardTitle, null, "Flashcards");
+                    var sprite = GetSprite(btn.Icon);
+                    GenerateMenuItem(btn.FlashcardTitle, sprite, "Flashcards");
                 }
-
             }
         }
 
@@ -65,21 +62,44 @@ public class DynamicInstantiation : MonoBehaviour
                 Debug.Log(btn.Language + "    " + PlayerPrefs.GetInt(LANGUAGE));
                 if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.StoryTitles, null, "Story");
+                    var sprite = GetSprite(btn.Icon);
+                    GenerateMenuItem(btn.StoryTitles, sprite, "Story");
                 }
             }
         }
 
         if (index == 2)
         {
+            foreach (var btn in stateController.GetStoryTitles())
+            {
+                if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
+                {
+                    var sprite = GetSprite(btn.Icon);
+                    GenerateMenuItem(btn.StoryName, sprite, "NormalStories");
+                }
+            }
+        }
+
+        if (index == 3)
+        {
             foreach (var btn in stateController.GetMcqTitles())
             {
                 if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
-                    GenerateMenuItem(btn.MCQName, null, "MCQ");
+                    var sprite = GetSprite(btn.Icon);
+                    GenerateMenuItem(btn.MCQName, sprite, "MCQ");
                 }
 
             }
         }
+    }
+
+    private Sprite GetSprite(byte[] imageData)
+    {
+        Texture2D texture = new Texture2D(0, 0);
+        texture.LoadImage(imageData);
+        var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+        return sprite;
     }
 }

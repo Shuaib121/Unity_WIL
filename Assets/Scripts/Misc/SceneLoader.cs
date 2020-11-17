@@ -24,6 +24,16 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("StorySelection"));
     }
 
+    public void NormalStoryScene() //loads the normal story selection screen
+    {
+        if (FindObjectOfType<ChosenOption>())
+        {
+            Destroy(FindObjectOfType<ChosenOption>());
+        }
+
+        StartCoroutine(DelayNextScene("NormalStories"));
+    }
+
     public void MainMenu()//loads main menu
     {
         var optionObject = FindObjectsOfType<ChosenOption>();
@@ -59,6 +69,11 @@ public class SceneLoader : MonoBehaviour
     public void PuzzleScene()//loads puzzle scene
     {
         StartCoroutine(DelayNextScene("Puzzle"));
+    }
+
+    public void SelectionScene()//loads puzzle scene
+    {
+        StartCoroutine(DelayNextScene("Selection"));
     }
 
     private IEnumerator DelayNextScene(string scene) //delays sceneloading

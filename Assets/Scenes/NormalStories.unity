@@ -318,9 +318,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 100, y: -100}
   m_SizeDelta: {x: -200, y: -200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1001 &665850593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ PrefabInstance:
     - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StorySelectionScene
+      value: SelectionScene
       objectReference: {fileID: 0}
     - target: {fileID: 1102555224562292059, guid: db140edf7439f8a47a1279a35c720bad,
         type: 3}
@@ -936,7 +936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -100}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: -99.99997, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080918903
@@ -1725,8 +1725,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1133619593}
   m_HandleRect: {fileID: 1133619592}
   m_Direction: 2
-  m_Value: 0.50000006
-  m_Size: 0.20516974
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1868,9 +1868,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1913997372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906901754143b6b4c8e0778ecbf88526, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ecd14126b4bf9842ab7f9bb02561081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyText: {fileID: 2025819387}
 --- !u!4 &1913997374
 Transform:
   m_ObjectHideFlags: 0
@@ -1918,11 +1919,11 @@ RectTransform:
   m_Father: {fileID: 589130586}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00024414062}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 99.999954}
+  m_SizeDelta: {x: 780, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &2025819386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,203 +1970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BossByzToday at 6:33 PM
-
-    sorry ill be there once ive fixed this damn
-    thing xD
-
-    ShuuToday at 6:34 PM
-
-    no worries, I think I may have figured
-    out how to do it now though
-
-    BossByzToday at 6:34 PM
-
-    show me ur code?
-
-    ShuuToday
-    at 6:34 PM
-
-    it is in many different place xD just come on call and ill show
-    you what I did
-
-    and it is very untidy, did not name stuff properly, was just
-    experimenting
-
-    BossByzToday at 6:37 PM
-
-    will be just now
-
-    fixed it
-
-    lol
-
-    ShuuToday
-    at 6:39 PM
-
-    nioce
-
-    BossByzToday at 6:39 PM
-
-    so whats the plan?
-
-    what
-    changes have u made so far >P?
-
-    ShuuToday at 6:39 PM
-
-    i have not pushed
-    anything, was just experimenting to see how it can be done
-
-    i can show you
-    my way and then you can show me yours to see which is more efficient
-
-    BossByzToday
-    at 6:41 PM
-
-
-
-
-
-    this is my way haha
-
-    ShuuToday at 6:41 PM
-
-    yeab but
-    then we gonna have to use normal buttons and not lean buttons anymore
-
-    i
-    think
-
-    or are those lean buttons?
-
-    BossByzToday at 6:42 PM
-
-    normal
-
-    im
-    sure u could do it with lean buttoins haha
-
-    ShuuToday at 6:43 PM
-
-    probably,
-    i did mine a different way though, I guess ill just record it instead
-
-    BossByzToday
-    at 6:43 PM
-
-    :thumbsup_tone5:
-
-    ShuuToday at 6:47 PM
-
-    BossByzToday
-    at 6:56 PM
-
-    looks good dude :thumbsup_tone5:
-
-    ShuuToday at 6:57 PM
-
-    The
-    thing is that your method may be a bit better because you are not physically
-    connecting gameobjects and so on I think, it may be more stable or so. We can
-    use you method if you know how to implement it with the db titles
-
-    BossByzToday
-    at 6:57 PM
-
-    can do
-
-    ShuuToday at 6:58 PM
-
-    okay, then im gonna leave
-    that to you the, if you need help to set it up then let me know, I am gonna make
-    a new scene for normal stories now
-
-    BossByzToday at 6:58 PM
-
-    cool
-
-    i
-    can redesign the scrolling right?
-
-    cause the scrolling has to ajust to how
-    many items there is
-
-    ShuuToday at 6:59 PM
-
-    theolin reminded me that there
-    are two types of stories, normal stories are just gonna be a bunch of text so
-    gonna need to make it different
-
-    BossByzToday at 6:59 PM
-
-    :thumbsup_tone5:
-
-    ShuuToday
-    at 6:59 PM
-
-    and yeah you can change it, although the current one also adjusts
-    to the number of items
-
-    BossByzToday at 6:59 PM
-
-    cool
-
-    u think we
-    will have this decently finished by the 18th?
-
-    ShuuToday at 7:01 PM
-
-    idk,
-    if you think you can make this change by Wednesday then go for it, but my opinion
-    would be to polish up the main features first before changing it up
-
-    but
-    theolin does want a working apk that can be published to the app store on wednesday
-
-    BossByzToday
-    at 7:01 PM
-
-    what do u mean make this change?
-
-    published to the app store??
-    LOL
-
-    we dont even have a name for the app
-
-    or an icon
-
-    i mean the
-    icon is easy to get lol
-
-    ShuuToday at 7:02 PM
-
-    I mean if you can make
-    the app work properly with the button instantiation by Wednesday without many
-    issues then go for it but I feel we can maybe focus more on that next week
-
-    i
-    think he said it is just a version to show to elain or something
-
-    it wont
-    be our final version
-
-    i kinda want to polish the app for Wednesday so it
-    looks decent and works well
-
-    BossByzToday at 7:04 PM
-
-    true
-
-    maybe
-    i can work on another branch?
-
-    ShuuToday at 7:05 PM
-
-    that would probably
-    be a good idea
-
-    just incase things break'
+  m_Text: 
 --- !u!222 &2025819388
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -8,4 +8,5 @@ public class StoryTable
     public string StoryName { get; set; }
     public string StoryText { get; set; }
     public int Language { get; set; }
+    public byte[] Icon { get; set; }
 }
