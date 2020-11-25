@@ -50,7 +50,6 @@ namespace Lean.Transition.Method
 					audioSource.volume = Volume;
 
 					audioSource.Play();
-
 					Destroy(gameObject, Target.length);
 				}
 			}
