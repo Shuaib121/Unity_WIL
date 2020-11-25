@@ -20,12 +20,11 @@ public class Speech : MonoBehaviour
         TextToSpeech.instance.SetVolume(0.5f);
         TextToSpeech.instance.SetPitch(0.75f);
         TextToSpeech.instance.SetSpeed(1f);
-
-        TextToSpeech.instance.Speak("Initialized");
     }
 
     public void SpeakCard(string text)
     {
+        TextToSpeech.instance.StopSpeech();
         if (!TextToSpeech.instance.IsSpeaking())
         {
             TextToSpeech.instance.Speak(text);
