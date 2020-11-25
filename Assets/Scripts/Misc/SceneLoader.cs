@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -77,8 +78,15 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Puzzle"));
     }
 
-    public void JigsawPuzzleScene()//loads jigsaw puzzle scene
+    public void PuzzleSelectionScene()//loads puzzle scene
     {
+        StartCoroutine(DelayNextScene("PuzzleSelection"));
+    }
+
+
+    public void JigsawPuzzleScene(GameObject puzzleObject )//loads jigsaw puzzle scene
+    {
+        FindObjectOfType<PuzzleImage>().SetImage(puzzleObject.GetComponent<JigPuzzleButton>().GetImage());
         StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
     }
 

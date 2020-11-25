@@ -3227,7 +3227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6581417c0a7d9724f88a1a8500f84f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 4373ddef2b25ac34ab748555987f3554, type: 3}
+  image: {fileID: 0}
   generateBackground: 1
   alignWithCamera: 1
   clearOldSaves: 1
