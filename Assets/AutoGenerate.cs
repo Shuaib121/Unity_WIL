@@ -1,26 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Unity.Jobs;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AutoGenerate : MonoBehaviour
 {
-
     [SerializeField] GameObject generate;
     [SerializeField] GameObject loadingAnimation;
-
+    private AsyncOperation operation;
     // Start is called before the first frame update
     void Start()
     {
         Screen.orientation = ScreenOrientation.Landscape;
-        StartCoroutine(GeneratePuzzle());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        generate.GetComponent<RuntimeGeneration>().GeneratePuzzle();
+        //StartCoroutine(GeneratePuzzle());
     }
 
     private void OnDestroy()
@@ -31,26 +23,6 @@ public class AutoGenerate : MonoBehaviour
     IEnumerator GeneratePuzzle()
     {
         yield return new WaitForSeconds(0.01f);
-        var job = new VelocityJob()
-        {
-            generate = this.generate
-        };
-
-        JobHandle jobHandle = job.Schedule();
-        jobHandle.Complete();
-        if (jobHandle.IsCompleted)
-        {
-            Debug.Log("Puzzle Loaded");
-        }
+        generate.GetComponent<RuntimeGeneration>().GeneratePuzzle();
     }
-
-    struct VelocityJob : IJob
-    {
-        public GameObject generate;
-        public void Execute()
-        {
-            generate.GetComponent<RuntimeGeneration>().GeneratePuzzle();
-        }
-    }
-
 }

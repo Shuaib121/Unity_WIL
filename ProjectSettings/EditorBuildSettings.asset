@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JigsawPuzzle.unity
     guid: 8fd584f4839d4aa4895f4cc3b96d4616
+  - enabled: 1
+    path: Assets/Scenes/MathsGame.unity
+    guid: 229bec9391a4ce442bf1bf5168ee4cda
   m_configObjects: {}

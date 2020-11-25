@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     private AsyncOperation operation;
     void Awake()
     {
-        Application.targetFrameRate = 80;
+        Application.targetFrameRate = 90;
     }
     public void LoadSceneByName(string scene)
     {
@@ -77,10 +77,16 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Puzzle"));
     }
 
-    public void JigsawPuzzleScene()//loads puzzle scene
+    public void JigsawPuzzleScene()//loads jigsaw puzzle scene
     {
         StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
     }
+
+    public void MathsGameScene()//loads math game scene
+    {
+        StartCoroutine(DelayNextSceneLoader("MathsGame"));
+    }
+
 
     public void SelectionScene()//loads puzzle scene
     {
@@ -89,15 +95,17 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
     {
-        operation = SceneManager.LoadSceneAsync(scene);
-
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.10f);
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(scene);
     }
 
     private IEnumerator DelayNextSceneLoader(string scene)
     {
-        //SceneManager.UnloadSceneAsync("Main Menu");
-        operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+        loadingAnimation.SetActive(true);
+
+        operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
         operation.allowSceneActivation = false;
 
         while (!operation.isDone)
@@ -108,10 +116,7 @@ public class SceneLoader : MonoBehaviour
             {
                 operation.allowSceneActivation = true;
             }
-
             yield return null;
         }
-
-        //loadingAnimation.SetActive(false);
     }
 }

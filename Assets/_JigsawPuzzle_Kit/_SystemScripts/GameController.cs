@@ -129,10 +129,6 @@ public class GameController : MonoBehaviour
 	// Main game cycle
 	void Update () 
 	{
-		if (Input.GetKeyUp(KeyCode.Escape)) 
-			Pause ();
-
-
 		if (puzzle  &&  Time.timeScale > 0  &&  !gameFinished)
 		{
 			// Process puzzle and react on it state
