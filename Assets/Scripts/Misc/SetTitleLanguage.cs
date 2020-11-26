@@ -22,7 +22,7 @@ public class SetTitleLanguage : MonoBehaviour
     {
         flashText.text = "Flashcards";
         socialStoryText.text = "Social Stories";
-        mcqText.text = "Multiple Choice Tests";
+        mcqText.text = "Multiple Choice\nTests";
         puzzleText.text = "Puzzles";
     }
 
@@ -30,7 +30,7 @@ public class SetTitleLanguage : MonoBehaviour
     {
         flashText.text = "Flitskaarte";
         socialStoryText.text = "Sociale Stories";
-        mcqText.text = "Meervoudige Keusetoetse";
+        mcqText.text = "Meervoudige\nKeusetoetse";
         puzzleText.text = "Ruigels";
     }
 
