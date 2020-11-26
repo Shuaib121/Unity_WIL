@@ -95,8 +95,13 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextSceneLoader("MathsGame"));
     }
 
+    public void AbacusScene()//loads math game scene
+    {
+        StartCoroutine(DelayNextSceneLoader("Abacus"));
+    }
 
-    public void SelectionScene()//loads puzzle scene
+
+    public void SelectionScene()//loads selection scene
     {
         StartCoroutine(DelayNextScene("Selection"));
     }

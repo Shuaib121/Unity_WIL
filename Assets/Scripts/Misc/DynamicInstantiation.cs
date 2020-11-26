@@ -75,7 +75,7 @@ public class DynamicInstantiation : MonoBehaviour
                 if (btn.Language == PlayerPrefs.GetInt(LANGUAGE))
                 {
                     var sprite = GetSprite(btn.Icon);
-                    GenerateMenuItem(btn.StoryName, sprite, "NormalStories");
+                    GenerateMenuItem(btn.StoryName, sprite, "MegaBook");
                 }
             }
         }
