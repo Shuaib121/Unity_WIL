@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Abacus.unity
+    guid: 56680a68e49436947affdad9b94fc94e
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 3709878cbf7e4824580c99fe9a8df7cc
   - enabled: 1
