@@ -8,7 +8,7 @@ public class AchievementGeneration : MonoBehaviour
     private const string LANGUAGE = "Language";
     public ScrollRect View;
     public GameObject Content;
-    public LeanButton Prefab;
+    public GameObject Prefab;
     [SerializeField] Sprite StoryIcon;
     [SerializeField] Sprite FlashcardIcon;
     [SerializeField] Sprite MCQIcon;
@@ -43,8 +43,11 @@ public class AchievementGeneration : MonoBehaviour
                 break;
         }
 
-        LeanButton latestButton = Instantiate(Prefab);
+        GameObject latestButton = Instantiate(Prefab);
+
         latestButton.transform.SetParent(Content.transform, false);
+
+        latestButton = latestButton.transform.Find("AnimatedButton").gameObject;
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
         Debug.Log(type + "\t\t" + Random.Range(1, 10000));
@@ -55,7 +58,7 @@ public class AchievementGeneration : MonoBehaviour
 
         latestButton.transform.Find("Progress").GetComponent<Slider>().value = (float)progress;
 
-        latestButton.OnClick.AddListener(
+        latestButton.GetComponent<Button>().onClick.AddListener(
           () => OnMenuItemClick(title, description));
 
         View.verticalNormalizedPosition = 1;
