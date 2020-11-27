@@ -1,6 +1,4 @@
 ﻿using Lean.Gui;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LanguageSelection : MonoBehaviour
@@ -12,8 +10,10 @@ public class LanguageSelection : MonoBehaviour
 
     private void Start()
     {
+
         if (!PlayerPrefs.HasKey(LANGUAGE))
         {
+            Debug.Log("HAS NONE");
             languagePopup.GetComponent<LeanWindow>().TurnOn();
         }
     }

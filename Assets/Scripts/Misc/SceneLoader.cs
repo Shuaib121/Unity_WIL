@@ -21,16 +21,6 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Story")); //loads the story scene to display chosen story
     }
 
-    public void StorySelectionScene() //loads the story selection screen
-    {
-        if (FindObjectOfType<ChosenOption>())
-        {
-            Destroy(FindObjectOfType<ChosenOption>());
-        }
-
-        StartCoroutine(DelayNextScene("StorySelection"));
-    }
-
     public void NormalStoryScene() //loads the normal story selection screen
     {
         if (FindObjectOfType<ChosenOption>())
@@ -57,20 +47,10 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("MCQ"));
     }
 
-    public void MCQSelectionScene()//loads MCQSelectionScene
-    {
-        StartCoroutine(DelayNextScene("MCQSelection"));
-    }
-
 
     public void FlashcardsScene()//loads flashcard scene
     {
         StartCoroutine(DelayNextScene("Flashcards"));
-    }
-
-    public void FlashSelection() //loads flashselection scene
-    {
-        StartCoroutine(DelayNextScene("FlashSelection"));
     }
 
     public void PuzzleScene()//loads puzzle scene

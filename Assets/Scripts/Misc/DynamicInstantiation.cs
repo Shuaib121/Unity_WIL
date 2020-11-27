@@ -8,7 +8,7 @@ public class DynamicInstantiation : MonoBehaviour
     private const string LANGUAGE = "Language";
     public ScrollRect View;
     public GameObject Content;
-    public LeanButton Prefab;
+    public GameObject Prefab;
 
     void Start()
     {
@@ -17,8 +17,12 @@ public class DynamicInstantiation : MonoBehaviour
 
     public void GenerateMenuItem(string title, Sprite icon, string scene)
     {
-        LeanButton latestButton = Instantiate(Prefab);
+        Debug.Log("Generating");
+
+        var latestButton = Instantiate(Prefab);
         latestButton.transform.SetParent(Content.transform, false);
+
+        latestButton = latestButton.transform.Find("AnimatedButton").gameObject;
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
 
@@ -26,7 +30,7 @@ public class DynamicInstantiation : MonoBehaviour
 
         //latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = description ?? "";
 
-        latestButton.OnClick.AddListener(
+        latestButton.GetComponent<Button>().onClick.AddListener(
            () => OnMenuItemClick(scene, title));
 
         View.verticalNormalizedPosition = 1;

@@ -16,7 +16,6 @@ public class DragBead : MonoBehaviour
     private int collisionCounter = 0;
     private void Start()
     {
-        Screen.orientation = ScreenOrientation.Landscape;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -92,11 +91,6 @@ public class DragBead : MonoBehaviour
     {
         oldMousePosition = GetMouseAsWorldPoint().x;
         yield return new WaitForSeconds(0.25f);
-    }
-
-    private void OnDestroy()
-    {
-        Screen.orientation = ScreenOrientation.Portrait;
     }
 
 }

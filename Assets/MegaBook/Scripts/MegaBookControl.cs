@@ -30,6 +30,7 @@ public class MegaBookControl : MonoBehaviour
 
 	void Start()
 	{
+		Screen.orientation = ScreenOrientation.Landscape;
 	}
 
 	void Update()
@@ -163,5 +164,10 @@ public class MegaBookControl : MonoBehaviour
 
 		if ( GUILayout.Button("Close") )
 			ShowGui = false;
+	}
+
+    private void OnDestroy()
+    {
+		Screen.orientation = ScreenOrientation.Portrait;
 	}
 }
