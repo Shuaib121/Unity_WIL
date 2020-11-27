@@ -23,19 +23,23 @@ public class AchievementGeneration : MonoBehaviour
         GenerateButtonsFromList();
     }
 
-    public void GenerateMenuItem(string title, AchievementType type, int difficulty)
+    public void GenerateMenuItem(string title, AchievementType type, int difficulty, double progress, string description)
     {
         Sprite icon = StoryIcon;
-        switch(type)
+        Color color = new Color(1f, 0f, 0.5f);
+        switch (type)
         {
             case AchievementType.FLASHCARD:
                 icon = FlashcardIcon;
+                color = new Color(1f, 0.69f, 0f);
                 break;
             case AchievementType.MCQ:
                 icon = MCQIcon;
+                color = new Color(0.3f, 0.8f, 0f);
                 break;
             case AchievementType.PUZZLE:
                 icon = PuzzleIcon;
+                color = new Color(0.35f, 0.48f, 1f);
                 break;
         }
 
@@ -43,30 +47,33 @@ public class AchievementGeneration : MonoBehaviour
         latestButton.transform.SetParent(Content.transform, false);
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
+        Debug.Log(type + "\t\t" + Random.Range(1, 10000));
+        Debug.Log(color + "\t\t" + Random.Range(1,10000));
+        latestButton.transform.Find("IconBackground").GetComponent<Image>().color = color;
 
         latestButton.transform.Find("IconBackground").transform.Find("Icon").GetComponent<Image>().sprite = icon;
 
-        //latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = difficulty.ToString() ?? "";
+        latestButton.transform.Find("Progress").GetComponent<Slider>().value = (float)progress;
 
         latestButton.OnClick.AddListener(
-          () => OnMenuItemClick(title));
+          () => OnMenuItemClick(title, description));
 
         View.verticalNormalizedPosition = 1;
     }
 
-    void OnMenuItemClick(string title)
+    void OnMenuItemClick(string title, string description)
     {
         Debug.Log("click");
         GameObject dialog = GameObject.Find("AchievementDialog");
         dialog.GetComponent<LeanWindow>().On = true;
-        dialog.transform.Find("Panel").transform.Find("Text").GetComponent<TextMeshProUGUI>().text = title;
+        dialog.transform.Find("Panel").transform.Find("Text").GetComponent<TextMeshProUGUI>().text = description;
     }
 
     void GenerateButtonsFromList()
     {
         foreach (var item in AchievementList.Achievements)
         {
-            GenerateMenuItem(item.Title, item.type, item.Difficulty);
+            GenerateMenuItem(item.Title, item.type, item.Difficulty, item.Progess, item.Description);
         }
     }
 
