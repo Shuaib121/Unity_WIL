@@ -48,16 +48,18 @@ public class AchievementGeneration : MonoBehaviour
 
         //latestButton.transform.Find("Description").GetComponent<TextMeshProUGUI>().text = difficulty.ToString() ?? "";
 
-        //latestButton.OnClick.AddListener(
-        //  () => OnMenuItemClick(scene, title));
+        latestButton.OnClick.AddListener(
+          () => OnMenuItemClick(title));
 
         View.verticalNormalizedPosition = 1;
     }
 
-    void OnMenuItemClick(string scene, string title)
+    void OnMenuItemClick(string title)
     {
-        GameObject.Find("Logic").GetComponent<ChosenOption>().SetTitle(title);
-        GameObject.Find("Logic").GetComponent<SceneLoader>().LoadSceneByName(scene);
+        Debug.Log("click");
+        GameObject dialog = GameObject.Find("AchievementDialog");
+        dialog.GetComponent<LeanWindow>().On = true;
+        dialog.transform.Find("Panel").transform.Find("Text").GetComponent<TextMeshProUGUI>().text = title;
     }
 
     void GenerateButtonsFromList()
