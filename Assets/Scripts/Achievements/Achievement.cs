@@ -4,6 +4,7 @@
     public string Description;
     public int Difficulty;
     public double Progess;
+    public AchievementType type;
 
     public Achievement()
     {

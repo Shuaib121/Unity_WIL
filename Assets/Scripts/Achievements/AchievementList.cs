@@ -13,7 +13,8 @@ public class AchievementList
             Description = "Read 1 book",
             Difficulty = 1,
             Progess = double.IsInfinity(User.BooksRead / 1.0) == true
-                    ? 0 : (User.BooksRead / 1.0 * 100)
+                    ? 0 : (User.BooksRead / 1.0 * 100),
+            type = AchievementType.STORY
         };
 
         new Achievement()
@@ -22,7 +23,8 @@ public class AchievementList
             Description = "Read 5 books",
             Difficulty = 2,
             Progess = double.IsInfinity(User.BooksRead / 5.0) == true
-                    ? 0 : (User.BooksRead / 5.0 * 100)
+                    ? 0 : (User.BooksRead / 5.0 * 100),
+            type = AchievementType.STORY
         };
 
         new Achievement()
@@ -31,7 +33,8 @@ public class AchievementList
             Description = "Read 10 books",
             Difficulty = 3,
             Progess = double.IsInfinity(User.BooksRead / 10.0) == true
-                ? 0 : (User.BooksRead / 10.0 * 100)
+                ? 0 : (User.BooksRead / 10.0 * 100),
+            type = AchievementType.STORY
         };
 
         new Achievement()
@@ -40,7 +43,8 @@ public class AchievementList
             Description = "Read 20 books",
             Difficulty = 5,
             Progess = double.IsInfinity(User.BooksRead / 20.0) == true
-                ? 0 : (User.BooksRead / 20.0 * 100)
+                ? 0 : (User.BooksRead / 20.0 * 100),
+            type = AchievementType.STORY
         };
 
         //FLASHCARD ACHIEVEMENTS
@@ -50,7 +54,8 @@ public class AchievementList
             Description = "1 button press",
             Difficulty = 1,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 1.0) == true
-                ? 0 : (User.FlashcardButtonPress / 1.0 * 100)
+                ? 0 : (User.FlashcardButtonPress / 1.0 * 100),
+            type = AchievementType.FLASHCARD
         };
 
         new Achievement()
@@ -59,7 +64,8 @@ public class AchievementList
             Description = "10 button press",
             Difficulty = 2,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 10.0) == true
-                ? 0 : (User.FlashcardButtonPress / 10.0 * 100)
+                ? 0 : (User.FlashcardButtonPress / 10.0 * 100),
+            type = AchievementType.FLASHCARD
         };
 
         new Achievement()
@@ -68,7 +74,8 @@ public class AchievementList
             Description = "20 button press",
             Difficulty = 3,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 20.0) == true
-                ? 0 : (User.FlashcardButtonPress / 20.0 * 100)
+                ? 0 : (User.FlashcardButtonPress / 20.0 * 100),
+            type = AchievementType.FLASHCARD
         };
 
         new Achievement()
@@ -77,7 +84,8 @@ public class AchievementList
             Description = "30 button press",
             Difficulty = 4,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 30.0) == true
-                ? 0 : (User.FlashcardButtonPress / 30.0 * 100)
+                ? 0 : (User.FlashcardButtonPress / 30.0 * 100),
+            type = AchievementType.FLASHCARD
         };
 
         //MCQ ACHIEVEMENTS
@@ -87,7 +95,8 @@ public class AchievementList
             Description = "5 total correct answers",
             Difficulty = 1,
             Progess = double.IsInfinity(User.MCQCorrectCount / 5.0) == true
-                ? 0 : (User.MCQCorrectCount / 5.0 * 100)
+                ? 0 : (User.MCQCorrectCount / 5.0 * 100),
+            type = AchievementType.MCQ
         };
 
         new Achievement()
@@ -96,7 +105,8 @@ public class AchievementList
             Description = "20 total correct answers",
             Difficulty = 2,
             Progess = double.IsInfinity(User.MCQCorrectCount / 20.0) == true
-                ? 0 : (User.MCQCorrectCount / 20.0 * 100)
+                ? 0 : (User.MCQCorrectCount / 20.0 * 100),
+            type = AchievementType.MCQ
         };
 
         new Achievement()
@@ -105,7 +115,8 @@ public class AchievementList
             Description = "1 pefect score",
             Difficulty = 3,
             Progess = double.IsInfinity(User.MCQPerfectCount / 1.0) == true
-        ? 0 : (User.MCQPerfectCount / 1.0 * 100)
+        ? 0 : (User.MCQPerfectCount / 1.0 * 100),
+            type = AchievementType.MCQ
         };
 
         new Achievement()
@@ -114,7 +125,8 @@ public class AchievementList
             Description = "3 pefect scores",
             Difficulty = 5,
             Progess = double.IsInfinity(User.MCQPerfectCount / 3.0) == true
-                ? 0 : (User.MCQPerfectCount / 3.0 * 100)
+                ? 0 : (User.MCQPerfectCount / 3.0 * 100),
+            type = AchievementType.MCQ
         };
 
         //PUZZLE ACHIEVEMENTS
@@ -124,7 +136,8 @@ public class AchievementList
             Description = "1 puzzle",
             Difficulty = 2,
             Progess = double.IsInfinity(User.PuzzleCount / 1.0) == true
-                ? 0 : (User.PuzzleCount / 1.0 * 100)
+                ? 0 : (User.PuzzleCount / 1.0 * 100),
+            type = AchievementType.PUZZLE
         };
 
         new Achievement()
@@ -133,7 +146,8 @@ public class AchievementList
             Description = "2 puzzle",
             Difficulty = 3,
             Progess = double.IsInfinity(User.PuzzleCount / 2.0) == true
-                ? 0 : (User.PuzzleCount / 2.0 * 100)
+                ? 0 : (User.PuzzleCount / 2.0 * 100),
+            type = AchievementType.PUZZLE
         };
 
         new Achievement()
@@ -142,7 +156,8 @@ public class AchievementList
             Description = "3 puzzle",
             Difficulty = 4,
             Progess = double.IsInfinity(User.PuzzleCount / 3.0) == true
-                ? 0 : (User.PuzzleCount / 3.0 * 100)
+                ? 0 : (User.PuzzleCount / 3.0 * 100),
+            type = AchievementType.PUZZLE
         };
 
         new Achievement()
@@ -151,7 +166,8 @@ public class AchievementList
             Description = "5 puzzle",
             Difficulty = 5,
             Progess = double.IsInfinity(User.PuzzleCount / 5.0) == true
-                ? 0 : (User.PuzzleCount / 5.0 * 100)
+                ? 0 : (User.PuzzleCount / 5.0 * 100),
+            type = AchievementType.PUZZLE
         };
 
         return Achievements;

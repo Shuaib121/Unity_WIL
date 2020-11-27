@@ -337,6 +337,10 @@ MonoBehaviour:
   View: {fileID: 485919587}
   Content: {fileID: 589413677}
   Prefab: {fileID: 3388325625079499820, guid: ef15a5a982d234e45a7e62c934bb4e23, type: 3}
+  StoryIcon: {fileID: 21300000, guid: b965676327eb1224ebed5a1cdcd237d3, type: 3}
+  FlashcardIcon: {fileID: 21300000, guid: bf81165e9651a4f4e948c88b8ad2a00b, type: 3}
+  MCQIcon: {fileID: 21300000, guid: ede1174eec331a645b322083817e7224, type: 3}
+  PuzzleIcon: {fileID: 21300000, guid: b6f65845f4086dd47bb1dc470629f4c4, type: 3}
 --- !u!1 &589413677
 GameObject:
   m_ObjectHideFlags: 0
