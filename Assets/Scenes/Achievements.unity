@@ -487,13 +487,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.49820757, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d90325bdf2068b44b0b3abfafe8c0e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65d7a6a8f72d43c46b81c8bd600aaf45, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -713,6 +713,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590771759146964907, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590771759146964907, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590771759146964907, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590771759146964907, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1322058961}
+    - target: {fileID: 8590771759146964907, guid: db140edf7439f8a47a1279a35c720bad,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db140edf7439f8a47a1279a35c720bad, type: 3}
