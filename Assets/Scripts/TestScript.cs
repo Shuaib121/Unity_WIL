@@ -2,51 +2,39 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using static NativeGallery;
 
 public class TestScript : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI tmp;
-    // Start is called before the first frame update
-    void Start()
+	[SerializeField] Image image;
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
 
 	public void PickImage(int maxSize)
 	{
-		NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
+
+		NativeGallery.Permission permission = NativeGallery.GetImagesFromGallery((path) =>
 		{
 			Debug.Log("Image path: " + path);
+			tmp.text = path[0];
 			if (path != null)
 			{
 				// Create Texture from selected image
-				Texture2D texture = NativeGallery.LoadImageAtPath(path, maxSize);
+				Texture2D texture = NativeGallery.LoadImageAtPath(path[0], maxSize);
 				if (texture == null)
 				{
 					Debug.Log("Couldn't load texture from " + path);
 					return;
 				}
 
-				// Assign texture to a temporary quad and destroy it after 5 seconds
-				GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-				quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
-				quad.transform.forward = Camera.main.transform.forward;
-				quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
-
-				Material material = quad.GetComponent<Renderer>().material;
-				if (!material.shader.isSupported) // happens when Standard shader is not included in the build
-					material.shader = Shader.Find("Legacy Shaders/Diffuse");
-
-				material.mainTexture = texture;
-
-				Destroy(quad, 5f);
-
-				// If a procedural texture is not destroyed manually, 
-				// it will only be freed after a scene change
-				Destroy(texture, 5f);
+				image.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 			}
-		}, "Select a PNG image", "image/png");
+		}, "Select an image", "image/*");
 
 		Debug.Log("Permission result: " + permission);
 	}

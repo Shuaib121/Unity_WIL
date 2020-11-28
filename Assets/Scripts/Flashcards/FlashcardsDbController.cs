@@ -11,6 +11,8 @@ public class FlashcardsDbController : MonoBehaviour
     List<FlashcardsTable> FlashCards = new List<FlashcardsTable>();
     int Index = 0;
 
+    [SerializeField] Image image;
+
 
     void Start()
     {
