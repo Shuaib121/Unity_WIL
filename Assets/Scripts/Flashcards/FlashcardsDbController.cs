@@ -58,9 +58,4 @@ public class FlashcardsDbController : MonoBehaviour
         string text = FlashCards.ElementAt(Index).FlashcardText;
         FindObjectOfType<Speech>().SpeakCard(text);
     }
-
-    private void OnDisable()
-    {
-        User.FlashcardButtonPress++;
-    }
 }
