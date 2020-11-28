@@ -50,8 +50,7 @@ public class AchievementGeneration : MonoBehaviour
         latestButton = latestButton.transform.Find("AnimatedButton").gameObject;
 
         latestButton.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = title ?? "Untitled";
-        Debug.Log(type + "\t\t" + Random.Range(1, 10000));
-        Debug.Log(color + "\t\t" + Random.Range(1,10000));
+
         latestButton.transform.Find("IconBackground").GetComponent<Image>().color = color;
 
         latestButton.transform.Find("IconBackground").transform.Find("Icon").GetComponent<Image>().sprite = icon;
@@ -66,7 +65,6 @@ public class AchievementGeneration : MonoBehaviour
 
     void OnMenuItemClick(string title, string description)
     {
-        Debug.Log("click");
         GameObject dialog = GameObject.Find("AchievementDialog");
         dialog.GetComponent<LeanWindow>().On = true;
         dialog.transform.Find("Panel").transform.Find("Text").GetComponent<TextMeshProUGUI>().text = description;
