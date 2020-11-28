@@ -58,10 +58,4 @@ public class FlashcardsDbController : MonoBehaviour
         string text = FlashCards.ElementAt(Index).FlashcardText;
         FindObjectOfType<Speech>().SpeakCard(text);
     }
-
-    private void OnDestroy()
-    {
-        User.FlashcardButtonPress++;
-        Debug.Log(User.FlashcardButtonPress);
-    }
 }

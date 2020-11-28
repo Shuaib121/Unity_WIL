@@ -13540,7 +13540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6920376558475482262}
   m_Layer: 0
-  m_Name: The Ugly Duckling
+  m_Name: UglyDuckling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
