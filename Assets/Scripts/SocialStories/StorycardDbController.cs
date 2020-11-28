@@ -58,4 +58,9 @@ public class StorycardDbController : MonoBehaviour
         Debug.Log(text);
         FindObjectOfType<Speech>().SpeakCard(text);
     }
+
+    private void OnDestroy()
+    {
+        User.BooksRead++;
+    }
 }

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Speech : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private void Awake()
+    {
+
+    }
     void Start()
     {
         if (Application.platform == RuntimePlatform.Android)
@@ -16,10 +19,11 @@ public class Speech : MonoBehaviour
     private void SetupTts()
     {
         TextToSpeech.instance.Initialize();
-        TextToSpeech.instance.SetLanguage(TextToSpeech.Locale.ENGLISH_US);
-        TextToSpeech.instance.SetVolume(0.5f);
-        TextToSpeech.instance.SetPitch(0.75f);
-        TextToSpeech.instance.SetSpeed(1f);
+        //TextToSpeech.instance.SetLanguage(TextToSpeech.Locale.ENGLISH_US);
+        //TextToSpeech.instance.SetVolume(0.5f);
+        //TextToSpeech.instance.SetPitch(0.75f);
+        //TextToSpeech.instance.SetSpeed(1f);
+        SpeakCard("Initialized");
     }
 
     public void SpeakCard(string text)

@@ -19,6 +19,7 @@ public class AutoGenerate : MonoBehaviour
     private void OnDestroy()
     {
         Screen.orientation = ScreenOrientation.Portrait;
+        User.PuzzleCount++;
     }
 
     IEnumerator GeneratePuzzle()

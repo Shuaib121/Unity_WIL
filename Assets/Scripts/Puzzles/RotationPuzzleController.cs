@@ -57,4 +57,9 @@ public class RotationPuzzleController : MonoBehaviour
         }
 
     }
+
+    private void OnDestroy()
+    {
+        User.PuzzleCount++;
+    }
 }

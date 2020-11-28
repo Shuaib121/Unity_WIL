@@ -22,5 +22,6 @@ public class StorybookManager : MonoBehaviour
     private void OnDestroy()
     {
         Screen.orientation = ScreenOrientation.Portrait;
+        User.BooksRead++;
     }
 }
