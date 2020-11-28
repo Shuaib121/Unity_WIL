@@ -7,9 +7,9 @@ public class TestAchievement : MonoBehaviour
         User.FetchAchievementStorage();
 
         //GET AND SET ACHIEVEMENTS (AUTO SAVED TO PLAYERPREFS AFTER SETTING A VALUE)
-        Debug.Log("Books read before is " + User.BooksRead);
-        User.BooksRead++;
-        Debug.Log("Books read after is " + User.BooksRead);
+        //Debug.Log("Books read before is " + User.BooksRead);
+        //User.BooksRead++;
+        //Debug.Log("Books read after is " + User.BooksRead);
 
         //GENERATE ACHIEVEMENTS AND ADD TO LIST
         AchievementList.BuildAchievements();
@@ -17,7 +17,7 @@ public class TestAchievement : MonoBehaviour
         //FOREACH ACHIEVEMENT
         foreach (var item in AchievementList.Achievements)
         {
-            Debug.Log(item.Progess);
+            //Debug.Log(item.Progess);
 
             if (item.Progess >= 100)
             {
