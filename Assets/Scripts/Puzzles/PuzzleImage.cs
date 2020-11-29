@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class PuzzleImage : MonoBehaviour
 {
-    [SerializeField] Texture2D puzzleImage;
+    [SerializeField] Texture2D jigsawPuzzleImage;
+    [SerializeField] GameObject rotationPuzzleImage;
     // Start is called before the first frame update
     public Texture2D GetImage()
     {
-        return puzzleImage;
+        return jigsawPuzzleImage;
     }
 
     public void SetImage(Texture2D puzzleImage)
     {
-       this.puzzleImage = puzzleImage;
+       this.jigsawPuzzleImage = puzzleImage;
     }
+
+    public GameObject GetRotationImage()
+    {
+        return rotationPuzzleImage;
+    }
+
+    public void SetRotationImage(GameObject image)
+    {
+        rotationPuzzleImage = image;
+    }
+
 }

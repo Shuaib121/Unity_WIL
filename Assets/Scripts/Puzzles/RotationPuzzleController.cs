@@ -5,8 +5,9 @@ using UnityEngine;
 public class RotationPuzzleController : MonoBehaviour
 {
     [SerializeField] List<Transform> pictures;
-    [SerializeField] List<GameObject> puzzles;
+    [SerializeField] GameObject puzzles;
     [SerializeField] GameObject winParticle;
+    [SerializeField] GameObject winDisplay;
     [SerializeField] AudioClip winSound;
 
     public static bool youWin;
@@ -15,7 +16,13 @@ public class RotationPuzzleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (Transform child in puzzles[0].transform)
+
+        
+        var tempPuzzle = FindObjectOfType<PuzzleImage>().GetRotationImage();
+        puzzles = Instantiate(tempPuzzle, new Vector3(0.4f,1.05f, -5.639398f),Quaternion.identity);
+        puzzles.SetActive(true);
+
+        foreach (Transform child in puzzles.transform)
         {
             pictures.Add(child);
         }
@@ -50,6 +57,7 @@ public class RotationPuzzleController : MonoBehaviour
             if(!played)
             {
                 winParticle.GetComponent<ParticleSystem>().Play();
+                winDisplay.SetActive(true);
                 AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position , 0.5f);
                 played = true;
             }

@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 6544fe76ed9b57341945f7236a6c296a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7145132960675670427
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_0
+  - first:
+      213: 250018195621943869
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_1
+  - first:
+      213: -762337853593574599
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_2
+  - first:
+      213: 1118870197248273239
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_3
+  - first:
+      213: -1374206500772607912
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_4
+  - first:
+      213: -4011690184016846867
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_5
+  - first:
+      213: -4457272372509753412
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_6
+  - first:
+      213: 2862482694838575989
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_7
+  - first:
+      213: -2702264535791740605
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_8
+  - first:
+      213: 7408196691981550808
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_9
+  - first:
+      213: -5049955548582318197
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_10
+  - first:
+      213: 8603620045664751993
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_11
+  - first:
+      213: 2977666804857256472
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_12
+  - first:
+      213: -7810607407447616284
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_13
+  - first:
+      213: 2662660166535736971
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_14
+  - first:
+      213: -5794002202275249218
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_15
+  - first:
+      213: 6691104148713078849
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_16
+  - first:
+      213: -117161212951708216
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_17
+  - first:
+      213: 8471086758535761671
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_18
+  - first:
+      213: 5053356799161871570
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_19
+  - first:
+      213: -4326620784960722780
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_20
+  - first:
+      213: -8582504989536446913
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_21
+  - first:
+      213: -2155950604410003481
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_22
+  - first:
+      213: -5132435921916540772
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_23
+  - first:
+      213: 6641665896971935480
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_24
+  - first:
+      213: 7884223617053164557
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_25
+  - first:
+      213: -6919610698324006751
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_26
+  - first:
+      213: -6672491564348453973
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_27
+  - first:
+      213: -8572059884703530163
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_28
+  - first:
+      213: -12027976890830760
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_29
+  - first:
+      213: 5213831965030465139
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_30
+  - first:
+      213: -7470753495598085099
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_31
+  - first:
+      213: -3752334789355901376
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_32
+  - first:
+      213: 2772717508580130885
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_33
+  - first:
+      213: 1455148799214984922
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_34
+  - first:
+      213: -3539261370050469891
+    second: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 815
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99220a329c982360800000000000000
+      internalID: 7145132960675670427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 815
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1e69693e387300800000000000000
+      internalID: 250018195621943869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 465
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933a8bdd2c1ab65f0800000000000000
+      internalID: -762337853593574599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 465
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b21c03486078f00800000000000000
+      internalID: 1118870197248273239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 115
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8588a69e776ddece0800000000000000
+      internalID: -1374206500772607912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astronaut-Minimalism-Wide-Wallpaper-1080x1920-768x1365_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 115
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def11c0580d9358c0800000000000000
+      internalID: -4011690184016846867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

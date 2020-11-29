@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TEST.unity
-    guid: 6a56d972a0ca3394b835a62c816e4c0c
-  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 3709878cbf7e4824580c99fe9a8df7cc
   - enabled: 1
@@ -29,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PuzzleSelection.unity
     guid: d03018262d0b4f349af370f492142b91
+  - enabled: 1
+    path: Assets/Scenes/RotationPuzzleSelection.unity
+    guid: 43dd7e47adbeb2443850947549254c37
   - enabled: 1
     path: Assets/Scenes/Selection.unity
     guid: 8dd93afe101450c4fa97c5fb75a9e847

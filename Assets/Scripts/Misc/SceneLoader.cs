@@ -62,11 +62,18 @@ public class SceneLoader : MonoBehaviour
     {
         StartCoroutine(DelayNextScene("PuzzleSelection"));
     }
-
-
+    public void RotationPuzzleSelectionScene()//loads puzzle scene
+    {
+        StartCoroutine(DelayNextScene("RotationPuzzleSelection"));
+    }
     public void JigsawPuzzleScene(GameObject puzzleObject )//loads jigsaw puzzle scene
     {
         FindObjectOfType<PuzzleImage>().SetImage(puzzleObject.GetComponent<JigPuzzleButton>().GetImage());
+        StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
+    }
+
+    public void CreateJigsawPuzzleScene()
+    {
         StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
     }
 
