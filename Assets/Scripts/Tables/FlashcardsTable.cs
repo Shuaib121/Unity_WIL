@@ -2,7 +2,8 @@
 
 public class FlashcardsTable
 {
-	[PrimaryKey, AutoIncrement]
+
+    [PrimaryKey, AutoIncrement]
 	public int Id { get; set; }
 	public string FlashcardName { get; set; }
     public string FlashcardText { get; set; }

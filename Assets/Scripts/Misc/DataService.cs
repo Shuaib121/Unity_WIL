@@ -99,4 +99,9 @@ public class DataService : MonoBehaviour
     {
         return _connection.Table<FlashcardsTitleTable>();
     }
+
+    public SQLiteConnection GetConnection()
+    {
+        return _connection;
+    }
 }

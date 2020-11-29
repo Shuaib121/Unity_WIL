@@ -64,30 +64,30 @@ public class FlashcardDataService : MonoBehaviour
         Debug.Log("Final PATH: " + dbPath);
     }
 
-    public void CreateDB()
-    {
-        _connection.DropTable<FlashcardsTable>();
-        _connection.CreateTable<FlashcardsTable>();
+    //public void CreateDB()
+    //{
+    //    _connection.DropTable<FlashcardsTable>();
+    //    _connection.CreateTable<FlashcardsTable>();
 
-        _connection.InsertAll(new[]{
-            new FlashcardsTable{
-				//Id = 1,
-				FlashcardName = "TEST",
-                Category = "MORETEST",
-            },
-            new FlashcardsTable{
-				//Id = 1,
-				FlashcardName = "TEST",
-                Category = "MORETEST",
-            },
-            new FlashcardsTable{
-				//Id = 1,
-				FlashcardName = "TEST",
-                Category = "MORETEST",
-            }
+    //    _connection.InsertAll(new[]{
+    //        new FlashcardsTable{
+				////Id = 1,
+				//FlashcardName = "TEST",
+    //            Category = "MORETEST",
+    //        },
+    //        new FlashcardsTable{
+				////Id = 1,
+				//FlashcardName = "TEST",
+    //            Category = "MORETEST",
+    //        },
+    //        new FlashcardsTable{
+				////Id = 1,
+				//FlashcardName = "TEST",
+    //            Category = "MORETEST",
+    //        }
 
-        });
-    }
+    //    });
+    //}
 
     //public void AddImage()
     //{
@@ -121,10 +121,10 @@ public class FlashcardDataService : MonoBehaviour
     //	LoadImages();
     //}
 
-    public IEnumerable<FlashcardsTable> GetFlashcard()
-	{
-		return _connection.Table<FlashcardsTable>();
-	}
+ //   public IEnumerable<FlashcardsTable> GetFlashcard()
+	//{
+	//	return _connection.Table<FlashcardsTable>();
+	//}
 
 	//public TableQuery<byte[]> GetFlashcards()
 	//{
