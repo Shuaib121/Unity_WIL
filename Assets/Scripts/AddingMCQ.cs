@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using SQLite4Unity3d;
 using System.Linq;
 
-public class TestScript : MonoBehaviour
+public class AddingMCQ : MonoBehaviour
 {
 	//[SerializeField] TextMeshProUGUI tmp;
 	//[SerializeField] Image image;
@@ -17,27 +17,25 @@ public class TestScript : MonoBehaviour
 	void Start()
     {
 		DataService ds = new DataService("MainDatabase.db");
-		List<FlashcardsTitleTable> d = ds.GetFlashcardTitles().ToList();
+		List<MCQTitle> d = ds.GetMCQTitles().ToList();
 		categories.Clear();
 
 		foreach (var item in d)
 		{
 			if (item.Language == PlayerPrefs.GetInt("Language"))
 			{
-				categories.Add(item.FlashcardTitle);
+				categories.Add(item.MCQName);
 			}
 		}
+		GameObject.Find("Dropdown").GetComponent<TMP_Dropdown>().ClearOptions();
+		GameObject.Find("Dropdown").GetComponent<TMP_Dropdown>().AddOptions(categories);
+	}
 
-		for (int i = 0; i < 5; i++)
-		{
-			GameObject item = Instantiate(cell).gameObject;
-			GameObject content = GameObject.Find("Content");
-			item.transform.SetParent(content.transform);
-			item.transform.Find("Image").GetComponent<Image>().color = Color.black;
-
-			item.transform.Find("Image").Find("Dropdown").GetComponent<TMP_Dropdown>().ClearOptions();
-			item.transform.Find("Image").Find("Dropdown").GetComponent<TMP_Dropdown>().AddOptions(categories);
-		}
+	public void AddItem()
+    {
+		GameObject item = Instantiate(cell).gameObject;
+		GameObject content = GameObject.Find("Content");
+		item.transform.SetParent(content.transform);
 	}
 
 	public void PickImage(int maxSize)
@@ -84,24 +82,52 @@ public class TestScript : MonoBehaviour
 		GameObject content = GameObject.Find("Content");
 		var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
 		var db = new SQLiteConnection(dbPath);
-		db.CreateTable<FlashcardsTable>();
+		db.CreateTable<MCQTable>();
 
 		foreach (Transform child in content.transform)
         {
-			string english = child.Find("Image").Find("English").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
-			TMP_Dropdown dropdown = child.Find("Image").Find("Dropdown").GetComponent<TMP_Dropdown>();
+			string question = child.Find("Image").Find("Question").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
+			string answerOne = child.Find("Image").Find("AnswerOne").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
+			string answerTwo = child.Find("Image").Find("AnswerTwo").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
+			string answerThree = child.Find("Image").Find("AnswerThree").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
+			string answerFour = child.Find("Image").Find("AnswerFour").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
+			TMP_Dropdown rightDropdown = child.Find("Image").Find("CorrectAnswer").GetComponent<TMP_Dropdown>();
+			int correctIndex = rightDropdown.value;
+			string correct = answerOne;
+
+			switch(correctIndex)
+            {
+				case 1:
+					correct = answerTwo;
+					break;
+				case 2:
+					correct = answerThree;
+					break;
+				case 3:
+					correct = answerFour;
+					break;
+				default:
+					correct = answerOne;
+					break;
+            }
+
+			TMP_Dropdown dropdown = GameObject.Find("Dropdown").GetComponent<TMP_Dropdown>();
 			string category = dropdown.options[dropdown.value].text;
 
-			byte[] imageData = child.Find("Image").GetComponent<Image>().sprite.texture.EncodeToPNG();
+			//byte[] imageData = child.Find("Image").GetComponent<Image>().sprite.texture.EncodeToPNG();
 
-			FlashcardsTable s = new FlashcardsTable()
+			MCQTable mcq = new MCQTable()
 			{
-				Category = category,
-				FlashcardName = english,
-				FlashcardText = english,
-				ImageData = imageData
+				question = question,
+				optionOne = answerOne,
+				optionTwo = answerTwo,
+				optionThree = answerThree,
+				optionFour = answerFour,
+				answer = correct,
+				testName = category
 			};
-			db.Insert(s);
+
+			db.Insert(mcq);
 		}
 	}
 }

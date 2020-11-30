@@ -126,6 +126,11 @@ public class FlashcardDataService : MonoBehaviour
 		return _connection.Table<FlashcardsTable>();
 	}
 
+    public IEnumerable<FlashcardsTitleTable> GetFCTitles()
+    {
+        return _connection.Table<FlashcardsTitleTable>();
+    }
+
 	//public TableQuery<byte[]> GetFlashcards()
 	//{
 	//	return _connection.Table<FlashcardsTable>().Select(x => x.ImageData);
