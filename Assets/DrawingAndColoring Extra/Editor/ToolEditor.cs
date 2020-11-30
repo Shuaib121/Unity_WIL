@@ -27,13 +27,13 @@ namespace IndieStudio.DrawingAndColoring.DCEditor
 
 			GUILayout.BeginHorizontal ();
 			if (GUILayout.Button ("Review Drawing & Coloring Extra", GUILayout.Width (230), GUILayout.Height (22))) {
-				Application.OpenURL (Links.packageURL);
+				
 			}
 
 			GUI.backgroundColor = Colors.greenColor;         
 
 			if (GUILayout.Button ("More Assets", GUILayout.Width (120), GUILayout.Height (22))) {
-				Application.OpenURL (Links.indieStudioStoreURL);
+
 			}
 			GUI.backgroundColor = Colors.whiteColor;         
 

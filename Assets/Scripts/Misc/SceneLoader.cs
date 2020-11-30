@@ -66,6 +66,22 @@ public class SceneLoader : MonoBehaviour
     {
         StartCoroutine(DelayNextScene("RotationPuzzleSelection"));
     }
+
+    public void WordGameScene()//loads word game scene
+    {
+
+        int language = PlayerPrefs.GetInt("Language");
+
+        if(language == 1)
+        {
+            StartCoroutine(DelayNextScene("EnglishWordGame"));
+        }
+        else
+        {
+            StartCoroutine(DelayNextScene("AfrikaansWordGame"));
+        }
+
+    }
     public void JigsawPuzzleScene(GameObject puzzleObject )//loads jigsaw puzzle scene
     {
         FindObjectOfType<PuzzleImage>().SetImage(puzzleObject.GetComponent<JigPuzzleButton>().GetImage());

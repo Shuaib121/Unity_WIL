@@ -342,7 +342,7 @@ namespace BizzyBeeGames.WordGame
 		/// </summary>
 		public void AddHint()
 		{
-			CurrentHints++;
+			CurrentHints += 5;
 			Save();
 		}
 
@@ -500,6 +500,8 @@ namespace BizzyBeeGames.WordGame
 		/// </summary>
 		private void BoardComplete()
 		{
+			AddHint();
+
 			string	boardId 	= Utilities.FormatBoardId(ActiveCategory, ActiveLevelIndex);
 			bool	awardHint	= true;
 
