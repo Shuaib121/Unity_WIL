@@ -28,10 +28,5 @@ namespace IndieStudio.DrawingAndColoring.Logic
 				}
 			}
 		}
-
-        private void OnDestroy()
-        {
-			Screen.orientation = ScreenOrientation.Portrait;
-		}
     }
 }

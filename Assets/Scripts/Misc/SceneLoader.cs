@@ -33,6 +33,7 @@ public class SceneLoader : MonoBehaviour
 
     public void MainMenu()//loads main menu
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         var optionObject = FindObjectsOfType<ChosenOption>();
         foreach (var option in optionObject)
         {
@@ -84,12 +85,14 @@ public class SceneLoader : MonoBehaviour
     }
     public void JigsawPuzzleScene(GameObject puzzleObject )//loads jigsaw puzzle scene
     {
+        Screen.orientation = ScreenOrientation.Landscape;
         FindObjectOfType<PuzzleImage>().SetImage(puzzleObject.GetComponent<JigPuzzleButton>().GetImage());
         StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
     }
 
     public void CreateJigsawPuzzleScene()
     {
+        Screen.orientation = ScreenOrientation.Landscape;
         StartCoroutine(DelayNextSceneLoader("JigsawPuzzle"));
     }
 

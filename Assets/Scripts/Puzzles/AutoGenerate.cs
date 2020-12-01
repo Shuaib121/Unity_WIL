@@ -10,7 +10,6 @@ public class AutoGenerate : MonoBehaviour
 
     void Start()
     {
-        Screen.orientation = ScreenOrientation.Landscape;
         generate.GetComponent<RuntimeGeneration>().image = FindObjectOfType<PuzzleImage>().GetImage();
         generate.GetComponent<RuntimeGeneration>().GeneratePuzzle();
         //StartCoroutine(GeneratePuzzle());
@@ -18,7 +17,6 @@ public class AutoGenerate : MonoBehaviour
 
     private void OnDestroy()
     {
-        Screen.orientation = ScreenOrientation.Portrait;
         User.PuzzleCount++;
     }
 
