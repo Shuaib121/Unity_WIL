@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
 	// Game UI
 	public GameObject pauseUI;
 	public GameObject winUI;
+	public GameObject winUIParticles;
 	public GameObject loseUI;
 	public Text hintCounterUI;
 	public Text timerCounterUI;
@@ -57,8 +58,6 @@ public class GameController : MonoBehaviour
 	int remainingHints;
 	Color backgroundColor;
 	static Vector3 oldPointerPosition;
-
-
 
     //=====================================================================================================
     // Initialize
@@ -159,9 +158,12 @@ public class GameController : MonoBehaviour
 					if (background && !invertRules) 
 						puzzle.SetPiecesActive(false); 
 					
-					if (winUI) 
+					if (winUI)
+                    {
 						winUI.SetActive(true);
-					
+						winUIParticles.SetActive(true);
+					}
+
 					PlayMusic(musicWin, false);
 					gameFinished = true;
 					break;	

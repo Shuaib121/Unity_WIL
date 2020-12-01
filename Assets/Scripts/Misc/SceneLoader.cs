@@ -109,6 +109,11 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Selection"));
     }
 
+    public void DrawingGame()//loads drawing scene
+    {
+        StartCoroutine(DelayNextScene("DrawingAlbum"));
+    }
+
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
     {
         yield return new WaitForSeconds(0.10f);

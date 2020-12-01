@@ -77,6 +77,7 @@ public class GameController_Inspector : Editor
 			GUILayout.BeginVertical("box");
 			game.pauseUI = EditorGUILayout.ObjectField(new GUIContent("Pause", "Link to object to be shown when game paused"), game.pauseUI, typeof(GameObject), true) as GameObject;
 			game.winUI = EditorGUILayout.ObjectField(new GUIContent("Win", "Link to object to be shown when player won the game"), game.winUI, typeof(GameObject), true) as GameObject;
+			game.winUIParticles = EditorGUILayout.ObjectField(new GUIContent("Win", "Link to object to be shown when player won the game"), game.winUIParticles, typeof(GameObject), true) as GameObject;
 			if (game.timer >= 0) game.loseUI = EditorGUILayout.ObjectField(new GUIContent("Lose", "Link to object to be shown when player lost game (if timer enabled)"), game.loseUI, typeof(GameObject), true) as GameObject;
 			if (game.hintLimit >= 0) game.hintCounterUI = EditorGUILayout.ObjectField(new GUIContent("Hints counter", "Link to UI text to visualize remaining hints amount (if hints enabled)"), game.hintCounterUI, typeof(Text), true) as Text;
 			if (game.timer >= 0) game.timerCounterUI = EditorGUILayout.ObjectField(new GUIContent("Time counter", "Link to UI text to visualize remaining time (if timer enabled)"), game.timerCounterUI, typeof(Text), true) as Text;
