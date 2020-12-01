@@ -15,11 +15,6 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			InitManagers();
 		}
 
-        private void Start()
-        {
-			Screen.orientation = ScreenOrientation.Landscape;
-		}
-
         private void InitManagers ()
 		{
 			if (values == null) {

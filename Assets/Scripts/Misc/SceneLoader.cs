@@ -106,7 +106,7 @@ public class SceneLoader : MonoBehaviour
 
     public void SelectionScene()//loads selection scene
     {
-        StartCoroutine(DelayNextScene("Selection"));
+        StartCoroutine(DelayNextSceneLoader("Selection"));
     }
 
     public void DrawingGame()//loads drawing scene
