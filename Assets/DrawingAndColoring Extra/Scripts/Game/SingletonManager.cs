@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-///Developed by Indie Studio
-///https://www.assetstore.unity3d.com/en/#!/publisher/9268
-///www.indiestd.com
-///info@indiestd.com
 
 namespace IndieStudio.DrawingAndColoring.Logic
 {
@@ -16,10 +12,13 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		// Use this for initialization
 		void Awake () 
 		{
-			Screen.orientation = ScreenOrientation.Landscape;
-			InitManagers ();
+			InitManagers();
 		}
 
+        private void Start()
+        {
+			Screen.orientation = ScreenOrientation.Landscape;
+		}
 
         private void InitManagers ()
 		{

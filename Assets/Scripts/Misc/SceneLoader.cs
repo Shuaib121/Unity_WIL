@@ -111,7 +111,8 @@ public class SceneLoader : MonoBehaviour
 
     public void DrawingGame()//loads drawing scene
     {
-        StartCoroutine(DelayNextScene("DrawingAlbum"));
+        Screen.orientation = ScreenOrientation.Landscape;
+        StartCoroutine(DelayNextSceneLoader("DrawingAlbum"));
     }
 
     private IEnumerator DelayNextScene(string scene) //delays sceneloading
