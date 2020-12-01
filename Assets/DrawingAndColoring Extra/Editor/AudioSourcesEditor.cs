@@ -8,9 +8,9 @@ using UnityEditor;
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace IndieStudio.DrawingAndColoring.DCEditor
+namespace WIL.DrawingAndColoring.DCEditor
 {
-		[CustomEditor (typeof(IndieStudio.DrawingAndColoring.Logic.AudioSources))]
+		[CustomEditor (typeof(WIL.DrawingAndColoring.Logic.AudioSources))]
 		public class AudioSourcesEditor: Editor
 		{
 				public override void OnInspectorGUI ()

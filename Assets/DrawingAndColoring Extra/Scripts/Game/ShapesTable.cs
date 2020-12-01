@@ -5,12 +5,7 @@ using System;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-///Developed by Indie Studio
-///https://www.assetstore.unity3d.com/en/#!/publisher/9268
-///www.indiestd.com
-///info@indiestd.com
-
-namespace IndieStudio.DrawingAndColoring.Logic
+namespace WIL.DrawingAndColoring.Logic
 {
 	#pragma warning disable 0168 // variable declared but not used.
 	#pragma warning disable 0219 // variable assigned but not used.

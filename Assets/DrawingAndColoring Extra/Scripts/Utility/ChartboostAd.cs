@@ -9,7 +9,7 @@ using System.Collections;
 #pragma warning disable 0168 // variable declared but not used.
 #pragma warning disable 0414 // variable assigned but not used.
 
-namespace IndieStudio.DrawingAndColoring.Utility
+namespace WIL.DrawingAndColoring.Utility
 {
 	[DisallowMultipleComponent]
 	public class ChartboostAd: MonoBehaviour

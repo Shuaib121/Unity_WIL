@@ -11,7 +11,7 @@ using UnityEngine.Advertisements;
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace IndieStudio.DrawingAndColoring.Utility
+namespace WIL.DrawingAndColoring.Utility
 {
 	public class UnityAd : MonoBehaviour
 	{

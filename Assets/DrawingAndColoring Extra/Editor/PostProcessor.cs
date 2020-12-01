@@ -6,7 +6,7 @@ using UnityEditor;
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace IndieStudio.DrawingAndColoring.DCEditor
+namespace WIL.DrawingAndColoring.DCEditor
 {
 	public class PostProcessor : AssetPostprocessor
 	{
