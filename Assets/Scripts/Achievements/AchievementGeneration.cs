@@ -13,6 +13,7 @@ public class AchievementGeneration : MonoBehaviour
     [SerializeField] Sprite FlashcardIcon;
     [SerializeField] Sprite MCQIcon;
     [SerializeField] Sprite PuzzleIcon;
+    [SerializeField] Sprite[] diff;
 
     void Start()
     {
@@ -57,6 +58,8 @@ public class AchievementGeneration : MonoBehaviour
 
         latestButton.transform.Find("Progress").GetComponent<Slider>().value = (float)progress;
 
+        latestButton.transform.Find("Diff").GetComponent<Image>().sprite = diff[difficulty - 1];
+
         latestButton.GetComponent<Button>().onClick.AddListener(
           () => OnMenuItemClick(title, description));
 
@@ -74,7 +77,15 @@ public class AchievementGeneration : MonoBehaviour
     {
         foreach (var item in AchievementList.Achievements)
         {
-            GenerateMenuItem(item.Title, item.type, item.Difficulty, item.Progess, item.Description);
+            if (PlayerPrefs.GetInt("Language") == 1)
+            {
+                GenerateMenuItem(item.Title, item.type, item.Difficulty, item.Progess, item.Description);
+            }
+            else
+            {
+                GenerateMenuItem(item.AfrixTitle, item.type, item.Difficulty, item.Progess, item.AfrixDescription);
+            }
+
         }
     }
 

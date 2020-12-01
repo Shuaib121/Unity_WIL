@@ -9,8 +9,10 @@ public class AchievementList
         //STORIES ACHIEVEMENTS
         new Achievement()
         {
-            Title = "Reach for the sky",
+            Title = "Book worm",
+            AfrixTitle = "Boekwurm",
             Description = "Read 1 book",
+            AfrixDescription = "Lees 1 boek",
             Difficulty = 1,
             Progess = double.IsInfinity(User.BooksRead / 1.0) == true
                     ? 0 : (User.BooksRead / 1.0 * 100),
@@ -19,8 +21,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "Reach for the sky 5",
+            Title = "Page turner",
+            AfrixTitle = "Bladsydraaier",
             Description = "Read 5 books",
+            AfrixDescription = "Lees 5 boeke",
             Difficulty = 2,
             Progess = double.IsInfinity(User.BooksRead / 5.0) == true
                     ? 0 : (User.BooksRead / 5.0 * 100),
@@ -29,8 +33,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "Reach for the sky 10",
+            Title = "Speed reader",
+            AfrixTitle = "Spoedleser",
             Description = "Read 10 books",
+            AfrixDescription = "Lees tien boeke",
             Difficulty = 3,
             Progess = double.IsInfinity(User.BooksRead / 10.0) == true
                 ? 0 : (User.BooksRead / 10.0 * 100),
@@ -39,19 +45,22 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "Reach for the sky 20",
+            Title = "Bookmaster",
+            AfrixTitle = "Boekmeester",
             Description = "Read 20 books",
+            AfrixDescription = "Lees 20 boeke",
             Difficulty = 5,
             Progess = double.IsInfinity(User.BooksRead / 20.0) == true
                 ? 0 : (User.BooksRead / 20.0 * 100),
             type = AchievementType.STORY
         };
 
-        //FLASHCARD ACHIEVEMENTS
         new Achievement()
         {
-            Title = "fc 1",
-            Description = "1 button press",
+            Title = "Card dealer",
+            AfrixTitle = "Kaarthandelaar",
+            Description = "Druk 1 keer op die flitskaartknoppie",
+            AfrixDescription = "Druk die flitskaartknoppie 1 keer",
             Difficulty = 1,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 1.0) == true
                 ? 0 : (User.FlashcardButtonPress / 1.0 * 100),
@@ -60,18 +69,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "fc 2",
-            Description = "10 button press",
-            Difficulty = 2,
-            Progess = double.IsInfinity(User.FlashcardButtonPress / 10.0) == true
-                ? 0 : (User.FlashcardButtonPress / 10.0 * 100),
-            type = AchievementType.FLASHCARD
-        };
-
-        new Achievement()
-        {
-            Title = "fc 3",
-            Description = "20 button press",
+            Title = "Card master",
+            AfrixTitle = "Kaartmeester",
+            Description = "Press the flashcard button 20 times",
+            AfrixDescription = "Druk die flitskaartknoppie 20 keer",
             Difficulty = 3,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 20.0) == true
                 ? 0 : (User.FlashcardButtonPress / 20.0 * 100),
@@ -80,8 +81,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "fc 4",
-            Description = "30 button press",
+            Title = "The flash",
+            AfrixTitle = "Die flits",
+            Description = "Press the flashcard button 30 times",
+            AfrixDescription = "Druk die flitskaartknoppie 30 keer",
             Difficulty = 4,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 30.0) == true
                 ? 0 : (User.FlashcardButtonPress / 30.0 * 100),
@@ -91,8 +94,10 @@ public class AchievementList
         //MCQ ACHIEVEMENTS
         new Achievement()
         {
-            Title = "mcq 1",
-            Description = "5 total correct answers",
+            Title = "Chosen one",
+            AfrixTitle = "Gekiesde een",
+            Description = "Achieve 5 correct answers",
+            AfrixDescription = "Bereik 5 korrekte antwoorde",
             Difficulty = 1,
             Progess = double.IsInfinity(User.MCQCorrectCount / 5.0) == true
                 ? 0 : (User.MCQCorrectCount / 5.0 * 100),
@@ -101,8 +106,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "mcq 2",
-            Description = "20 total correct answers",
+            Title = "MCQ Master",
+            AfrixTitle = "MCQ Meester",
+            Description = "Achieve 20 correct answers",
+            AfrixDescription = "Bereik 20 korrekte antwoorde",
             Difficulty = 2,
             Progess = double.IsInfinity(User.MCQCorrectCount / 20.0) == true
                 ? 0 : (User.MCQCorrectCount / 20.0 * 100),
@@ -111,8 +118,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "mcq 3",
-            Description = "1 pefect score",
+            Title = "Perfect score",
+            AfrixTitle = "Perfekte telling",
+            Description = "1 Pefect score",
+            AfrixDescription = "1 Perfekte telling",
             Difficulty = 3,
             Progess = double.IsInfinity(User.MCQPerfectCount / 1.0) == true
         ? 0 : (User.MCQPerfectCount / 1.0 * 100),
@@ -121,8 +130,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "mcq 4",
-            Description = "3 pefect scores",
+            Title = "Perfection",
+            AfrixTitle = "Volmaaktheid",
+            Description = "3 Pefect scores",
+            AfrixDescription = "3 Perfekte tellings",
             Difficulty = 5,
             Progess = double.IsInfinity(User.MCQPerfectCount / 3.0) == true
                 ? 0 : (User.MCQPerfectCount / 3.0 * 100),
@@ -132,8 +143,10 @@ public class AchievementList
         //PUZZLE ACHIEVEMENTS
         new Achievement()
         {
-            Title = "puzzle 1",
-            Description = "1 puzzle",
+            Title = "Pieces!",
+            AfrixTitle = "Stukke!",
+            Description = "Complete 1 puzzle",
+            AfrixDescription = "Voltooi 1 legkaart",
             Difficulty = 2,
             Progess = double.IsInfinity(User.PuzzleCount / 1.0) == true
                 ? 0 : (User.PuzzleCount / 1.0 * 100),
@@ -142,8 +155,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "puzzle 2",
-            Description = "2 puzzle",
+            Title = "Puzzle mender",
+            AfrixTitle = "Raaiselherstel",
+            Description = "Complete 2 puzzles",
+            AfrixDescription = "Voltooi 2 legkaarte",
             Difficulty = 3,
             Progess = double.IsInfinity(User.PuzzleCount / 2.0) == true
                 ? 0 : (User.PuzzleCount / 2.0 * 100),
@@ -152,8 +167,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "puzzle 3",
-            Description = "3 puzzle",
+            Title = "Puzzle genius",
+            AfrixTitle = "Legkaartgenie",
+            Description = "Complete 3 puzzles",
+            AfrixDescription = "Voltooi 3 legkaarte",
             Difficulty = 4,
             Progess = double.IsInfinity(User.PuzzleCount / 3.0) == true
                 ? 0 : (User.PuzzleCount / 3.0 * 100),
@@ -162,8 +179,10 @@ public class AchievementList
 
         new Achievement()
         {
-            Title = "puzzle 4",
-            Description = "5 puzzle",
+            Title = "Puzzle master",
+            AfrixTitle = "Legkaart meester",
+            Description = "Complete 5 puzzles",
+            AfrixDescription = "Voltooi 5 legkaarte",
             Difficulty = 5,
             Progess = double.IsInfinity(User.PuzzleCount / 5.0) == true
                 ? 0 : (User.PuzzleCount / 5.0 * 100),
