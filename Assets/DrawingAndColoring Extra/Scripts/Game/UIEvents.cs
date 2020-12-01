@@ -215,12 +215,12 @@ namespace IndieStudio.DrawingAndColoring.Logic
 
 		public void LoadAlbumScene ()
 		{
-			StartCoroutine (LoadSceneAsync("Album"));
+			StartCoroutine (LoadSceneAsync("DrawingAlbum"));
 		}
 
 		public void LoadGameScene ()
 		{
-			StartCoroutine (LoadSceneAsync("Game"));
+			StartCoroutine (LoadSceneAsync("DrawingGame"));
 		}
 
 		public void LeaveApp(){

@@ -8,16 +8,20 @@ using System.Collections;
 
 namespace IndieStudio.DrawingAndColoring.Logic
 {
-	public class SingletonManager : MonoBehaviour {
+	public class SingletonManager : MonoBehaviour
+	{
 
-		public GameObject[] values;
+        public GameObject[] values;
 
 		// Use this for initialization
-		void Awake () {
+		void Awake () 
+		{
+			Screen.orientation = ScreenOrientation.Landscape;
 			InitManagers ();
 		}
 
-		private void InitManagers ()
+
+        private void InitManagers ()
 		{
 			if (values == null) {
 				return;
@@ -30,5 +34,10 @@ namespace IndieStudio.DrawingAndColoring.Logic
 				}
 			}
 		}
-	}
+
+        private void OnDestroy()
+        {
+			Screen.orientation = ScreenOrientation.Portrait;
+		}
+    }
 }

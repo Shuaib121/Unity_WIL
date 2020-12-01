@@ -4,10 +4,6 @@ using System.Collections;
 using IndieStudio.DrawingAndColoring.Logic;
 using IndieStudio.DrawingAndColoring.Utility;
 
-///Developed by Indie Studio
-///https://www.assetstore.unity3d.com/en/#!/publisher/9268
-///www.indiestd.com
-///info@indiestd.com
 
 namespace IndieStudio.DrawingAndColoring.DCEditor
 {
@@ -41,15 +37,10 @@ namespace IndieStudio.DrawingAndColoring.DCEditor
 					EditorGUILayout.Separator ();
 
 					GUILayout.BeginHorizontal ();
-					//if (GUILayout.Button ("Review the Package", GUILayout.Width (150), GUILayout.Height (25))) {
-						//	Application.OpenURL ("https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:9268");
-				//	}
+
 
 					GUI.backgroundColor = greenColor;         
 
-					if (GUILayout.Button ("More Assets", GUILayout.Width (110), GUILayout.Height (25))) {
-							Application.OpenURL ("https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:9268");
-					}
 					GUI.backgroundColor = whiteColor;         
 
 					GUILayout.EndHorizontal ();
