@@ -2,7 +2,7 @@
 using UnityEditor;
 using System.Collections;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class BoardFileCreatorWindow : EditorWindow
 	{

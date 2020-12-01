@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	/// <summary>
 	/// Simple Tween class that provides the ability to quickly add dynamic animations to GameObjects.

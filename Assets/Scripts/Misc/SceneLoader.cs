@@ -43,6 +43,19 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(DelayNextScene("Main Menu"));
     }
 
+    public void MainMenuFromColouringBook()//loads main menu
+    {
+        Destroy(GameObject.Find("DrawCanvas"));
+        Screen.orientation = ScreenOrientation.Portrait;
+        var optionObject = FindObjectsOfType<ChosenOption>();
+        foreach (var option in optionObject)
+        {
+            Destroy(option.gameObject);
+        }
+
+        StartCoroutine(DelayNextScene("Main Menu"));
+    }
+
     public void MCQScene()//loads MCQScene
     {
         StartCoroutine(DelayNextScene("MCQ"));
@@ -61,6 +74,7 @@ public class SceneLoader : MonoBehaviour
 
     public void PuzzleSelectionScene()//loads puzzle scene
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         StartCoroutine(DelayNextScene("PuzzleSelection"));
     }
     public void RotationPuzzleSelectionScene()//loads puzzle scene

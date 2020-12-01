@@ -7,7 +7,7 @@ using GoogleMobileAds;
 using GoogleMobileAds.Api;
 #endif
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	// Example script showing how to invoke the Google Mobile Ads Unity plugin.
 	public class AdsController : SingletonComponent<AdsController>

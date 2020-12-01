@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class LetterBoard : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 	{

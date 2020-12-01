@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Diagnostics;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class WordBoard
 	{
