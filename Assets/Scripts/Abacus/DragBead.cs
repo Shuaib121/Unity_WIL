@@ -9,6 +9,8 @@ public class DragBead : MonoBehaviour
     private float oldMousePosition;
     private bool isSelected;
     private bool isMoving;
+    private bool isLoaded = false;
+    private bool mouseIsDown;
     public bool isHittingRightSide;
     public bool isHittingLeftSide;
     private float mZCoord;
@@ -17,6 +19,7 @@ public class DragBead : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        StartCoroutine(WaitForBead());
     }
 
     private void Update()
@@ -43,12 +46,17 @@ public class DragBead : MonoBehaviour
         StartCoroutine(TrackMousePosition());
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Bead" && isLoaded)
+        {
+            FindObjectOfType<AbacusSound>().PlaySound();
+        }
+    }
+
     void OnMouseDown()
     {
         isSelected = true;
-
-        //moveSpeed = moveSpeed * 10;
-        //rb.mass = rb.mass * 10;
 
         mZCoord = Camera.main.WorldToScreenPoint(
         gameObject.transform.position).z;
@@ -58,8 +66,6 @@ public class DragBead : MonoBehaviour
     private void OnMouseUp()
     {
         isSelected = false;
-        //moveSpeed = moveSpeed / 10;
-        //rb.mass = rb.mass / 10;
     }
 
     private Vector3 GetMouseAsWorldPoint()
@@ -91,6 +97,12 @@ public class DragBead : MonoBehaviour
     {
         oldMousePosition = GetMouseAsWorldPoint().x;
         yield return new WaitForSeconds(0.25f);
+    }
+
+    IEnumerator WaitForBead()
+    {
+        yield return new WaitForSeconds(0.5f);
+        isLoaded = true;
     }
 
 }

@@ -43,8 +43,7 @@ public class DynamicInstantiation : MonoBehaviour
     }
 
     void GenerateButtonsFromList()
-    {
-       
+    { 
         var stateController = FindObjectOfType<StateController>();
         int index = stateController.GetIndex();
         if(index == 0)
