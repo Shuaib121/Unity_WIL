@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using SQLite4Unity3d;
 using System.Linq;
 
-public class TestScript : MonoBehaviour
+public class AddScript : MonoBehaviour
 {
 	//[SerializeField] TextMeshProUGUI tmp;
 	//[SerializeField] Image image;
