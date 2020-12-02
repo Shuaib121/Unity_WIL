@@ -74,6 +74,7 @@ public class SceneLoader : MonoBehaviour
 
     public void PuzzleSelectionScene()//loads puzzle scene
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         StartCoroutine(DelayNextScene("PuzzleSelection"));
     }
     public void RotationPuzzleSelectionScene()//loads puzzle scene

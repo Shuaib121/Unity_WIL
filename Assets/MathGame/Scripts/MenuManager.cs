@@ -30,6 +30,8 @@ namespace MenuBarouch
 
 		public Image BACKGROUND_BACK;
 
+		public GameObject BACK_BUTTON;
+
 		public Color NORMAL_COLOR;
 
 		void Awake()
@@ -42,6 +44,7 @@ namespace MenuBarouch
 		//open the game
 		public void GoToGame()
 		{
+			BACK_BUTTON.SetActive(false);
 			float time = 0.2f;
 			GoOut (MENU,time,0);
 			GoIn (GAME, time, time);
@@ -50,6 +53,7 @@ namespace MenuBarouch
 		//open the menu
 		public void GoToMenu()
 		{
+			BACK_BUTTON.SetActive(true);
 			float time = 0.2f;
 			GoOut (GAME,time,0);
 			GoIn (MENU, time, time);
