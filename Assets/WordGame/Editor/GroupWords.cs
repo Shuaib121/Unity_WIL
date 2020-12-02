@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	public class GroupWords : EditorWindow
 	{
