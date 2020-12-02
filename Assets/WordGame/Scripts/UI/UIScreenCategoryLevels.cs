@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class UIScreenCategoryLevels : UIScreen
 	{

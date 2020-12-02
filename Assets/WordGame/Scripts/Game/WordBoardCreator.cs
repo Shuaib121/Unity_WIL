@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	/// <summary>
 	/// WordBoardCreator handles taking a array of string words and creating a WordBoard out of them where all letters of the words

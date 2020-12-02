@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class ProgressRing : MonoBehaviour
 	{

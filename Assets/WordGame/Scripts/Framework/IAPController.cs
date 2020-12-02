@@ -9,7 +9,7 @@ using UnityEngine.Purchasing;
 using UnityEngine.Purchasing.Extension;
 #endif
 
-namespace BizzyBeeGames.WordGame
+namespace Wil.WordGame
 {
 	public class IAPController : SingletonComponent<IAPController>
 	#if UNITY_IAP
