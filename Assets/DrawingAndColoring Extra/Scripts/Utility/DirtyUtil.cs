@@ -11,7 +11,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
 
-namespace WIL.DrawingAndColoring.Utility
+namespace IndieStudio.DrawingAndColoring.Utility
 {
 	public class DirtyUtil
 	{	

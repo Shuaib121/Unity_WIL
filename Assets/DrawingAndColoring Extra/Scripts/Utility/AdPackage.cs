@@ -8,7 +8,7 @@ using System;
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace WIL.DrawingAndColoring.Utility
+namespace IndieStudio.DrawingAndColoring.Utility
 {
 		[Serializable]
 		public class AdPackage

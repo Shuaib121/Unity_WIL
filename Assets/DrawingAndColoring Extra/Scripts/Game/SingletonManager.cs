@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-namespace WIL.DrawingAndColoring.Logic
+namespace IndieStudio.DrawingAndColoring.Logic
 {
 	public class SingletonManager : MonoBehaviour
 	{

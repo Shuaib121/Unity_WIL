@@ -13,7 +13,7 @@ using System.Collections;
  *
  */
 
-namespace WIL.DrawingAndColoring.Utility
+namespace IndieStudio.DrawingAndColoring.Utility
 {
 	public class Colors {
 

@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
-using WIL.DrawingAndColoring.Logic;
-using WIL.DrawingAndColoring.Utility;
+using IndieStudio.DrawingAndColoring.Logic;
+using IndieStudio.DrawingAndColoring.Utility;
 
 
-namespace WIL.DrawingAndColoring.DCEditor
+namespace IndieStudio.DrawingAndColoring.DCEditor
 {
 	[CustomEditor(typeof(ShapesManager))]
 	public class ShapesManagerEditor : Editor

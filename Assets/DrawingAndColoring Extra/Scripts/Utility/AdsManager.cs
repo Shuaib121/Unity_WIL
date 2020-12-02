@@ -10,7 +10,7 @@ using System.Collections.Generic;
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace WIL.DrawingAndColoring.Utility
+namespace IndieStudio.DrawingAndColoring.Utility
 {
 	[ExecuteInEditMode]
 	[RequireComponent(typeof(AdMob))]

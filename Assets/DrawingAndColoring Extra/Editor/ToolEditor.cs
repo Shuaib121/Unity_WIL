@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
-using WIL.DrawingAndColoring.Utility;
+using IndieStudio.DrawingAndColoring.Utility;
 
 ///Developed by Indie Studio
 ///https://www.assetstore.unity3d.com/en/#!/publisher/9268
 ///www.indiestd.com
 ///info@indiestd.com
 
-namespace WIL.DrawingAndColoring.DCEditor
+namespace IndieStudio.DrawingAndColoring.DCEditor
 {
-	[CustomEditor(typeof(WIL.DrawingAndColoring.Logic.Tool))]
+	[CustomEditor(typeof(IndieStudio.DrawingAndColoring.Logic.Tool))]
 	public class ToolEditor : Editor
 	{
 		public override void OnInspectorGUI ()
@@ -19,7 +19,7 @@ namespace WIL.DrawingAndColoring.DCEditor
 				return;
 			}
 
-			WIL.DrawingAndColoring.Logic.Tool tool = (WIL.DrawingAndColoring.Logic.Tool)target;//get the target
+			IndieStudio.DrawingAndColoring.Logic.Tool tool = (IndieStudio.DrawingAndColoring.Logic.Tool)target;//get the target
 
 			EditorGUILayout.Separator ();
 			EditorGUILayout.HelpBox ("The tool GameObject must be breakable from Prefab instance", MessageType.Info);
@@ -42,9 +42,9 @@ namespace WIL.DrawingAndColoring.DCEditor
 
 			tool.selectedContentIndex = EditorGUILayout.IntField ("Selected Content's Index", tool.selectedContentIndex);
 			EditorGUILayout.Separator ();
-			tool.feature = (WIL.DrawingAndColoring.Logic.Tool.ToolFeature)EditorGUILayout.EnumPopup ("Feature", tool.feature);
+			tool.feature = (IndieStudio.DrawingAndColoring.Logic.Tool.ToolFeature)EditorGUILayout.EnumPopup ("Feature", tool.feature);
 
-			if (tool.feature == WIL.DrawingAndColoring.Logic.Tool.ToolFeature.Line) {
+			if (tool.feature == IndieStudio.DrawingAndColoring.Logic.Tool.ToolFeature.Line) {
 				if(!tool.repeatedTexture)
 					tool.drawMaterial = EditorGUILayout.ObjectField ("Line Material", tool.drawMaterial, typeof(Material), true) as Material;
 				tool.lineThicknessFactor = EditorGUILayout.Slider ("Line Thickness Factor", tool.lineThicknessFactor, 0.1f, 10);
@@ -69,7 +69,7 @@ namespace WIL.DrawingAndColoring.DCEditor
 
 			tool.cursorRotation = EditorGUILayout.Slider ("Cursor Rotation", tool.cursorRotation, 0, 360);
 
-			if (tool.feature != WIL.DrawingAndColoring.Logic.Tool.ToolFeature.Hand) {
+			if (tool.feature != IndieStudio.DrawingAndColoring.Logic.Tool.ToolFeature.Hand) {
 			
 				tool.showContents = EditorGUILayout.Foldout (tool.showContents, "Contents");
 
@@ -100,7 +100,7 @@ namespace WIL.DrawingAndColoring.DCEditor
 			}
 
 			//Audioclip effect for Fill and Stamp features
-			if (tool.feature == WIL.DrawingAndColoring.Logic.Tool.ToolFeature.Fill || tool.feature == WIL.DrawingAndColoring.Logic.Tool.ToolFeature.Stamp) {
+			if (tool.feature == IndieStudio.DrawingAndColoring.Logic.Tool.ToolFeature.Fill || tool.feature == IndieStudio.DrawingAndColoring.Logic.Tool.ToolFeature.Stamp) {
 				tool.audioClip = EditorGUILayout.ObjectField ("Audio Clip", tool.audioClip, typeof(AudioClip), true) as AudioClip;
 			}
 

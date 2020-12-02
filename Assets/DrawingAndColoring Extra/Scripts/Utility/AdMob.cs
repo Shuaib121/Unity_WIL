@@ -5,7 +5,7 @@ using System;
 using GoogleMobileAds.Api;
 #endif
 
-namespace WIL.DrawingAndColoring.Utility
+namespace IndieStudio.DrawingAndColoring.Utility
 {
 [DisallowMultipleComponent]
 public class AdMob : MonoBehaviour

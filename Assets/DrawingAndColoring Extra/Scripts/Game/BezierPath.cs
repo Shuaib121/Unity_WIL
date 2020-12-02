@@ -1,3 +1,18 @@
+/**
+
+    This class demonstrates the code discussed in these two articles:
+
+    http://devmag.org.za/2011/04/05/bzier-curves-a-tutorial/
+    http://devmag.org.za/2011/06/23/bzier-path-algorithms/
+
+    Use this code as you wish, at your own risk. If it blows up 
+    your computer, makes a plane crash, or otherwise cause damage,
+    injury, or death, it is not my fault.
+
+    @author Herman Tulleken, dev.mag.org.za
+*/
+
+
 using UnityEngine;
 using System.Collections.Generic;
 

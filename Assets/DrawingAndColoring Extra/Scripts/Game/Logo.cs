@@ -2,8 +2,12 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+///Developed by Indie Studio
+///https://www.assetstore.unity3d.com/en/#!/publisher/9268
+///www.indiestd.com
+///info@indiestd.com
 
-namespace WIL.DrawingAndColoring.Logic
+namespace IndieStudio.DrawingAndColoring.Logic
 {
 	[DisallowMultipleComponent]
 	public class Logo : MonoBehaviour
