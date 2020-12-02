@@ -8,7 +8,7 @@ public class EditModeScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("EditMode") == 1)
         {
-            GameObject.Find("EditMode").SetActive(true);
+            GameObject.Find("EditMode").transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
         }
     }
 
