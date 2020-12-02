@@ -5,6 +5,8 @@ using TMPro;
 using System.Collections.Generic;
 using SQLite4Unity3d;
 using System.Linq;
+using System;
+using Lean.Gui;
 
 public class AddMCQTitleScript : MonoBehaviour
 {
@@ -39,12 +41,16 @@ public class AddMCQTitleScript : MonoBehaviour
 	public void Finish()
     {
 		GameObject content = GameObject.Find("Content");
-		var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
+
+		//UNITY EDITOR DB PATH
+		//var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
+		var dbPath = string.Format("{0}/{1}", Application.persistentDataPath, "MainDatabase.db");
+
 		var db = new SQLiteConnection(dbPath);
 		db.CreateTable<FlashcardsTable>();
 
 		foreach (Transform child in content.transform)
-        {
+		{
 			string caption = child.Find("Image").Find("Caption").GetChild(0).Find("Text").GetComponent<TextMeshProUGUI>().text;
 
 			byte[] imageData = child.Find("Image").GetComponent<Image>().sprite.texture.EncodeToPNG();
@@ -58,5 +64,16 @@ public class AddMCQTitleScript : MonoBehaviour
 
 			db.Insert(title);
 		}
+		/*
+		try
+        {
+
+		}
+		catch(Exception exception)
+        {
+			GameObject.Find("ConfirmDialog").GetComponent<LeanWindow>().On = true;
+			GameObject.Find("ConfirmDialog").transform.Find("Panel").Find("Text").GetComponent<TextMeshProUGUI>().text = exception.Message;
+        }
+		*/
 	}
 }

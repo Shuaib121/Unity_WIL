@@ -80,7 +80,8 @@ public class AddingMCQ : MonoBehaviour
 	public void Finish()
     {
 		GameObject content = GameObject.Find("Content");
-		var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
+		//var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
+		var dbPath = string.Format("{0}/{1}", Application.persistentDataPath, "MainDatabase.db");
 		var db = new SQLiteConnection(dbPath);
 		db.CreateTable<MCQTable>();
 
