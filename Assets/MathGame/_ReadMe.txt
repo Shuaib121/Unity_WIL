@@ -6,11 +6,6 @@ FIRST OF ALL: You need to import Dotween.
 HOW TO IMPORT DOTWEEN? Have a look here: https://appadvisory.zendesk.com/hc/en-us/article_attachments/204212345/__HOW_TO_IMPORT_DOTWEEN.pdf
 
 
-
-
-
-Thanks for your puchase.
-
 video tutorial : https://youtu.be/Ba1vKG6deh4
 
 
@@ -92,17 +87,3 @@ All the button scripts derives from ButtonHelper.
 * MoreGamesButton.cs : if you want a link to your game catalog, change the string URL inside.
 * PlayButton.cs : close the menu and launch the game.
 * rateUs.cs : put your method to open the link of the rating page of your game inside the "OnClicked" method.
-
-
-
-
-ADS :
-Everything is done for you : « Very Simple Ad » is already implemented. 
-Get it here : http://u3d.as/oWD
-
-
-
-Thanks ! 
-
-Our other assets : http://u3d.as/9cs
-Contact : contact@app-advisory.com

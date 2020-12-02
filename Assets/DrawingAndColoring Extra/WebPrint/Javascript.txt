@@ -1,9 +1,5 @@
 	<script>
 		<!--
-		///Developed by Indie Games Studio
-		///https://www.assetstore.unity3d.com/en/#!/publisher/9268
-		///www.indiestd.com
-		///info@indiestd.com
 		-->
 		function ExportImage(base64,imageName) {
 		
