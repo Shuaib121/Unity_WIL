@@ -6,7 +6,7 @@ using System.IO;
 
 using SimpleJSON;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	/// <summary>
 	/// Holds information about each category in the game

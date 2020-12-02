@@ -7,7 +7,7 @@ namespace AppAdvisory.MathGame
 	{
 		public void OnClicked()
 		{
-			
+			Application.OpenURL("http://u3d.as/9cs");
 		}
 	}
 }

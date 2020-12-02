@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	[CustomEditor(typeof(GameManager))]
 	public class GameManagerEditor : Editor

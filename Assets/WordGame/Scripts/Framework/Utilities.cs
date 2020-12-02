@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	public static class Utilities
 	{

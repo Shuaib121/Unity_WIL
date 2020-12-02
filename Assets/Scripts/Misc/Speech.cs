@@ -19,10 +19,10 @@ public class Speech : MonoBehaviour
     private void SetupTts()
     {
         TextToSpeech.instance.Initialize();
-        TextToSpeech.instance.SetLanguage(TextToSpeech.Locale.ENGLISH_UK);
-        TextToSpeech.instance.SetVolume(0.5f);
-        TextToSpeech.instance.SetPitch(0.75f);
-        TextToSpeech.instance.SetSpeed(0.8f);
+        //TextToSpeech.instance.SetLanguage(TextToSpeech.Locale.ENGLISH_US);
+        //TextToSpeech.instance.SetVolume(0.5f);
+        //TextToSpeech.instance.SetPitch(0.75f);
+        //TextToSpeech.instance.SetSpeed(1f);
         SpeakCard("Initialized");
     }
 

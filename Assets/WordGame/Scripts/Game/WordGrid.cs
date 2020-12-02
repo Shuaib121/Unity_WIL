@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	public class WordGrid : MonoBehaviour
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Wil.WordGame
+namespace BizzyBeeGames.WordGame
 {
 	public class IAPGameObject : MonoBehaviour
 	{
