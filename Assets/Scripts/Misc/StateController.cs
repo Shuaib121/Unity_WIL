@@ -27,6 +27,11 @@ public class StateController : MonoBehaviour
     }
     void Start()
     {
+        PopulateTitleLists();
+    }
+
+    public void PopulateTitleLists()
+    {
         flashTitles = ds.GetFlashcardTitles().ToList();
         socialStoryTitles = ds.GetStorycardTitles().ToList();
         storyTable = ds.GetStories().ToList();
