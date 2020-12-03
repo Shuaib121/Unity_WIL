@@ -17,6 +17,9 @@ public class MCQController : MonoBehaviour
     [SerializeField] AudioClip IncorrectSound;
     [SerializeField] LeanWindow incorrectDisplay;
 
+    private string scoreCommentText;
+    private string testCompleteText;
+    private int language;
     private int score = 0;
     private int questionNumber = 0;
     List<MCQTable>list = new List<MCQTable>();
@@ -24,11 +27,24 @@ public class MCQController : MonoBehaviour
     private string mcqTitle;
     bool flag = true;
 
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        language = PlayerPrefs.GetInt("Language");
+        mcqTitle = FindObjectOfType<ChosenOption>().GetTitle();
+        PopulateList();
+        DisplayFirstOption();
+
+        
+    }
+
     private void Update()
     {
         if(questionNumber > 4)
         {
-            questionTxt.text = "TEST COMPLETE\n\nYou Scored "+score+"/5";
+            SetComment();
+            questionTxt.text = testCompleteText;
             ansBtnOne.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
             ansBtnTwo.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
             ansBtnThree.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
@@ -46,13 +62,53 @@ public class MCQController : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void SetComment()
     {
-        mcqTitle = FindObjectOfType<ChosenOption>().GetTitle();
-        PopulateList();
-        DisplayFirstOption();
+
+        if (score <= 2)
+        {
+            if(language == 1)
+            {
+                scoreCommentText = "Better luck next time!";
+            }
+            else
+            {
+                scoreCommentText = "Beter geluk volgende keer";
+            }
+        }
+        else if(score <= 4)
+        {
+            if (language == 1)
+            {
+                scoreCommentText = "Great Job!";
+            }
+            else
+            {
+                scoreCommentText = "Goeie Werk!";
+            }
+        }
+        else
+        {
+            if (language == 1)
+            {
+                scoreCommentText = "Perfect Score!";
+            }
+            else
+            {
+                scoreCommentText = "Perfekte Telling!";
+            }
+        }
+
+        if (language == 1)
+        {
+            testCompleteText = scoreCommentText + "\n\nYou Scored " + score + "/5";
+        }
+        else
+        {
+            testCompleteText = scoreCommentText + "\n\nJy Het Geslaag " + score + "/5";
+        }
     }
+
     public void PopulateList()
     {
         var mcq = ds.GetMCQ();
