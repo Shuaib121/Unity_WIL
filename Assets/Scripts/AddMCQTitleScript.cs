@@ -40,7 +40,6 @@ public class AddMCQTitleScript : MonoBehaviour
 
 	public void Finish()
     {
-		FindObjectOfType<StateController>().PopulateTitleLists();
 		GameObject content = GameObject.Find("Content");
 
 		//UNITY EDITOR DB PATH
@@ -64,6 +63,7 @@ public class AddMCQTitleScript : MonoBehaviour
 			};
 
 			db.Insert(title);
+			FindObjectOfType<StateController>().PopulateTitleLists();
 		}
 		/*
 		try

@@ -38,7 +38,6 @@ public class AddFCTitleScript : MonoBehaviour
 
 	public void Finish()
     {
-		FindObjectOfType<StateController>().PopulateTitleLists();
 		GameObject content = GameObject.Find("Content");
 		//var dbPath = string.Format(@"Assets/StreamingAssets/{0}", "MainDatabase.db");
 		var dbPath = string.Format("{0}/{1}", Application.persistentDataPath, "MainDatabase.db");
@@ -59,6 +58,7 @@ public class AddFCTitleScript : MonoBehaviour
 			};
 
 			db.Insert(title);
+			FindObjectOfType<StateController>().PopulateTitleLists();
 		}
 	}
 }
