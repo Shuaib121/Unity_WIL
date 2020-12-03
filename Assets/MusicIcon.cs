@@ -5,10 +5,11 @@ public class MusicIcon : MonoBehaviour
 {
     [SerializeField] Sprite muted;
     [SerializeField] Sprite unmuted;
-
+    private AudioSource mainMenuAudio;
 
     private void Start()
     {
+        mainMenuAudio = FindObjectOfType<MenuMusic>().gameObject.GetComponent<AudioSource>();
         Mute();
     }
     public void Mute()
@@ -29,10 +30,12 @@ public class MusicIcon : MonoBehaviour
         if(muted == 0)
         {
             PlayerPrefs.SetInt("MuteMusic", 1);
+            mainMenuAudio.enabled = false;
         }
         else
         {
             PlayerPrefs.SetInt("MuteMusic", 0);
+            mainMenuAudio.enabled = true;
         }
 
         Mute();
