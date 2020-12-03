@@ -11,6 +11,11 @@ public class PerformanceModeScript : MonoBehaviour
             QualitySettings.vSyncCount = 0;
             Application.targetFrameRate = 30;
         }
+        else
+        {
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 90;
+        }
     }
 
     public void UpdatePerformanceMode()

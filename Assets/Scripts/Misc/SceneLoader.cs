@@ -7,10 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private GameObject loadingAnimation;
     private AsyncOperation operation;
-    void Awake()
-    {
-        Application.targetFrameRate = 90;
-    }
+
     public void LoadSceneByName(string scene)
     {
         StartCoroutine(DelayNextScene(scene));

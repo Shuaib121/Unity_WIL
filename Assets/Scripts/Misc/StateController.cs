@@ -35,7 +35,7 @@ public class StateController : MonoBehaviour
         flashTitles = ds.GetFlashcardTitles().ToList();
         socialStoryTitles = ds.GetStorycardTitles().ToList();
         storyTable = ds.GetStories().ToList();
-        mcqTitles = ds.GetMCQTitles().ToList(); ;
+        mcqTitles = ds.GetMCQTitles().ToList();
     }
 
     public List<FlashcardsTitleTable> GetFlashTitles()
