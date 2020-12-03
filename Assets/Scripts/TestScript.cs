@@ -27,17 +27,6 @@ public class TestScript : MonoBehaviour
 				categories.Add(item.FlashcardTitle);
 			}
 		}
-
-		for (int i = 0; i < 5; i++)
-		{
-			GameObject item = Instantiate(cell).gameObject;
-			GameObject content = GameObject.Find("Content");
-			item.transform.SetParent(content.transform);
-			item.transform.Find("Image").GetComponent<Image>().color = Color.black;
-
-			item.transform.Find("Image").Find("Dropdown").GetComponent<TMP_Dropdown>().ClearOptions();
-			item.transform.Find("Image").Find("Dropdown").GetComponent<TMP_Dropdown>().AddOptions(categories);
-		}
 	}
 
 	public void PickImage(int maxSize)
