@@ -79,13 +79,11 @@ public class MCQController : MonoBehaviour
 
         if (chosenAnswer.text == list[questionNumber].answer)
         {
-            Debug.Log("CORRECT: " +chosenAnswer.text +" "+ list[questionNumber].answer);
             AudioSource.PlayClipAtPoint(CorrectSound, Camera.main.transform.position);
             score++;
         }
         else
         {
-            Debug.Log("INCORRECT" + chosenAnswer.text + " " + list[questionNumber].answer);
             AudioSource.PlayClipAtPoint(IncorrectSound, Camera.main.transform.position);
             incorrectDisplay.GetComponentInChildren<Text>().text = "<size=60>Wrong Answer!</size> \n\nQuestion: "+list[questionNumber].question+"\n\nCorrect Answer: " + list[questionNumber].answer;
             incorrectDisplay.TurnOn();
@@ -97,16 +95,16 @@ public class MCQController : MonoBehaviour
         switch (questionNumber)
         {
             case 1:
-                questionNumberTxt.text = "2/5";
+                questionNumberTxt.text = "Q:2/5";
                 break;
             case 2:
-                questionNumberTxt.text = "3/5";
+                questionNumberTxt.text = "Q:3/5";
                 break;
             case 3:
-                questionNumberTxt.text = "4/5";
+                questionNumberTxt.text = "Q:4/5";
                 break;
             case 4:
-                questionNumberTxt.text = "5/5";
+                questionNumberTxt.text = "Q:5/5";
                 break;
         }
     }
