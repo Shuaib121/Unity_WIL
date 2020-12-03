@@ -36,6 +36,7 @@ public class FlashcardsDbController : MonoBehaviour
         if (Index == FlashCards.Count - 1) return;
         Index++;
         DisplayCurrentImage();
+        User.FlashcardButtonPress++;
     }
 
     public void Previous()
@@ -57,10 +58,5 @@ public class FlashcardsDbController : MonoBehaviour
     {
         string text = FlashCards.ElementAt(Index).FlashcardText;
         FindObjectOfType<Speech>().SpeakCard(text);
-    }
-
-    private void OnDestroy()
-    {
-        User.FlashcardButtonPress++;
     }
 }
