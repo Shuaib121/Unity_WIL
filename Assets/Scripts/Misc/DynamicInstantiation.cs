@@ -17,7 +17,6 @@ public class DynamicInstantiation : MonoBehaviour
 
     public void GenerateMenuItem(string title, Sprite icon, string scene)
     {
-        Debug.Log("Generating");
 
         var latestButton = Instantiate(Prefab);
         latestButton.transform.SetParent(Content.transform, false);
