@@ -59,7 +59,7 @@ public class AchievementList
         {
             Title = "Card dealer",
             AfrixTitle = "Kaarthandelaar",
-            Description = "Druk 1 keer op die flitskaartknoppie",
+            Description = "Press the flashcard button 1 time",
             AfrixDescription = "Druk die flitskaartknoppie 1 keer",
             Difficulty = 1,
             Progess = double.IsInfinity(User.FlashcardButtonPress / 1.0) == true
