@@ -22,6 +22,7 @@ public class MCQController : MonoBehaviour
     List<MCQTable>list = new List<MCQTable>();
     private DataService ds = new DataService("MainDatabase.db");
     private string mcqTitle;
+    bool flag = true;
 
     private void Update()
     {
@@ -32,6 +33,16 @@ public class MCQController : MonoBehaviour
             ansBtnTwo.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
             ansBtnThree.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
             ansBtnFour.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
+
+            if (flag)
+            {
+                User.MCQCorrectCount += score;
+                if (score == 5)
+                {
+                    User.MCQPerfectCount++;
+                }
+                flag = false;
+            }
         }
     }
 
