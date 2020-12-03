@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuMusic : MonoBehaviour
 {
-    List<string> sceneNames = new List<string> { "Main Menu", "Selection", "PuzzleSelection", "RotationPuzzleSelection" };
+    List<string> sceneNames = new List<string> { "Main Menu", "Selection", "PuzzleSelection", "RotationPuzzleSelection", "Achievements"};
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
