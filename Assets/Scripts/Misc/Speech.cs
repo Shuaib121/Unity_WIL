@@ -23,7 +23,6 @@ public class Speech : MonoBehaviour
         TextToSpeech.instance.SetVolume(0.5f);
         TextToSpeech.instance.SetPitch(0.75f);
         TextToSpeech.instance.SetSpeed(0.8f);
-        SpeakCard("Initialized");
     }
 
     public void SpeakCard(string text)

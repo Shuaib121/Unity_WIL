@@ -10,11 +10,9 @@ public class LanguageSelection : MonoBehaviour
 
     private void Start()
     {
-
         if (!PlayerPrefs.HasKey(LANGUAGE))
         {
-            Debug.Log("HAS NONE");
-            languagePopup.GetComponent<LeanWindow>().TurnOn();
+            PlayerPrefs.SetInt(LANGUAGE, 1);
         }
     }
     public void SetEnglish()
